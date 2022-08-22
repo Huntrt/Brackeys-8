@@ -1,0 +1,50 @@
+Map:
+	▪ Set width
+	▪ Block of vertically
+Ship:
+	▪ Formation:
+		▪ In grid shape
+		▪ Customize width and length
+		▪ Follow the leader
+	▪ Leader:
+		▪ Control by player
+		▪ Game over when die
+	▪ Allies:
+		▪ Follow it point in formation grid
+		▪ Die:
+			▪ Destroy
+			▪ Update formation
+		▪ Auto cast attack
+Enemy:
+	▪ Premade Movement:
+		▪ Move in direction
+		▪ Move for how long
+		▪ Movement sequence
+	▪ Die:
+		▪ Destroy
+		▪ Give money
+	▪ Auto cast attack
+Cast:
+	▪ Align Pattern:
+		Shoot projectile forward that align vertically
+		▪ Support all amount
+		▪ Spacing Align
+			Every position will space from each other using this value
+		▪ Squish Align
+			All position will share this value to space accordingly
+		▪ Array of position to fire
+	▪ Cone Pattern:
+		Shoot projectile forward in an cone pattern
+		▪ Support all amount
+		▪ Spreading between rotation
+		▪ Array of rotation to fire
+Attacks:
+	▪ Projectile
+		▪ Move speed
+		▪ Move in rotation
+		▪ Contact with enemy
+		▪ Dealt damage
+		▪ Destroy
+
+
+		
