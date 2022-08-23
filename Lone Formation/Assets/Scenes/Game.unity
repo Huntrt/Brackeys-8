@@ -216,7 +216,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 701089914}
+  - component: {fileID: 701089918}
   - component: {fileID: 701089916}
+  - component: {fileID: 701089917}
   - component: {fileID: 701089915}
   - component: {fileID: 701089913}
   m_Layer: 0
@@ -325,9 +327,73 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 12
-  inputDirection: {x: 0, y: 0, z: 0}
   Rigidbody: {fileID: 701089915}
   cam: {fileID: 519420031}
+--- !u!114 &701089917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701089912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a25ee91965a504dba06625faf27235, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allies:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  spacing: {x: 0.5, y: 0.5}
+  axis:
+    row: 0
+    column: 0
+  goalGrouper: {fileID: 701089912}
+  goalPrefab: {fileID: 2132476059431018670, guid: 5ac08e25681f64845bdb64ad07527e77,
+    type: 3}
+  goals: []
+--- !u!114 &701089918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701089912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 962fa280825a3d447a62806671a26d07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  formation: {fileID: 701089917}
+  movement: {fileID: 701089916}
 --- !u!1 &800530715
 GameObject:
   m_ObjectHideFlags: 0
