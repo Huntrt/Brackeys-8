@@ -1,6 +1,6 @@
 Map:
 	✓ Customize able scale
-	✓ Block of vertically
+	✓ Border
 Ship:
 	▪ Formation:
 		▪ In grid shape
@@ -16,6 +16,9 @@ Ship:
 			▪ Update formation
 		▪ Auto cast attack
 Enemy:
+	▪ Spawning
+		▪ In any side of border
+		▪ Focus on middle border
 	▪ Premade Movement:
 		▪ Move in direction
 		▪ Move for how long

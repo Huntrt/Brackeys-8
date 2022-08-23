@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class LeaderMovement : MonoBehaviour
 {  
 	[SerializeField] float speed;
 	public Vector3 inputDirection;
