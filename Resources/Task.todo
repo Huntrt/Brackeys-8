@@ -28,7 +28,7 @@ Enemy:
 		▪ Destroy
 		▪ Give money
 	▪ Auto cast attack
-Cast: @next
+Cast: @doing
 	▪ Align Pattern:
 		Shoot projectile forward that align vertically
 		▪ Support all amount
