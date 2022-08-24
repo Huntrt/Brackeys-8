@@ -1,9 +1,7 @@
-using System.Collections.Generic;
 using UnityEngine;
 using System;
 public class Formation : MonoBehaviour
 {
-    public List<Allies> allies = new List<Allies>();
 	public Vector2 spacing;
 	[Serializable] public class FormationAxis {public float row, column;} public FormationAxis axis;
 	public GameObject goalGrouper, goalPrefab;
@@ -18,7 +16,7 @@ public class Formation : MonoBehaviour
 	public void CreateGoal()
 	{
 		for (int g = 0; g < goals.Length; g++) {Destroy(goals[g].gameObject);}
-		int amount = allies.Count;
+		int amount = Leader.i.allies.Count;
 		goals = new Transform[amount];
 		Vector2[] initGoal = new Vector2[amount];
 
@@ -28,13 +26,13 @@ public class Formation : MonoBehaviour
 		int columnReached = -1; 
 		//Set column by flooring the square root of amount
 		axis.column = Mathf.Floor(Mathf.Sqrt(amount));
+		//Row has 1 by default
+		axis.row = 1;
 		//Go through all the goal
 		for (int g = 0; g < amount; g++)
 		{
 			//Has reach another column
 			columnReached++;
-			//Count this as the first row
-			if(axis.row == 0) {axis.row++;print(axis.row);}
 			//Spacing current in the X axis if this goal are not the first
 			if(g != 0) currentPos.x += spacing.x;
 			//If has reached max column

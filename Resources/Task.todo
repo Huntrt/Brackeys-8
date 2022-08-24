@@ -2,32 +2,33 @@ Map:
 	✓ Customize able scale
 	✓ Border
 Ship:
-	▪ Formation:
-		▪ In grid shape
-		▪ Customize width and length
-		▪ Follow the leader
+	✓ Formation:
+		✓ In grid shape
+		X Customize width and length
+		✓ Follow the leader
 	▪ Leader:
-		▪ Control by player
+		✓ Control by player
 		▪ Game over when die
 	▪ Allies:
-		▪ Follow it point in formation grid
+		✓ Follow it point in formation grid
 		▪ Die:
 			▪ Destroy
 			▪ Update formation
 		▪ Auto cast attack
 Enemy:
-	▪ Spawning
-		▪ In any side of border
-		▪ Focus on middle border
-	▪ Premade Movement:
-		▪ Move in direction
-		▪ Move for how long
-		▪ Movement sequence
+	✓ Spawning
+		✓ In any side of border
+		✓ Focus on middle border
+	✓ Premade Movement
+		✓ Move in direction
+		✓ Move for how long
+		✓ Movement sequence
+		▪ Advanced movement @consider
 	▪ Die:
 		▪ Destroy
 		▪ Give money
 	▪ Auto cast attack
-Cast:
+Cast: @next
 	▪ Align Pattern:
 		Shoot projectile forward that align vertically
 		▪ Support all amount
@@ -41,7 +42,7 @@ Cast:
 		▪ Support all amount
 		▪ Spreading between rotation
 		▪ Array of rotation to fire
-Attacks:
+Attacks: @next
 	▪ Projectile
 		▪ Move speed
 		▪ Move in rotation
