@@ -6,7 +6,6 @@ public class Stats : MonoBehaviour
 	[SerializeField] int _health;
 	[SerializeField] [Range(0,50)] float _movementSpeed;
 	public float cooldown;
-	public float damage;
 
 	//ignore: Cap movement speed at 50
 	public float movementSpeed 

@@ -274,7 +274,6 @@ MonoBehaviour:
   _health: 0
   _movementSpeed: 4
   cooldown: 0
-  damage: 0
 --- !u!4 &282641541
 Transform:
   m_ObjectHideFlags: 0
@@ -439,7 +438,6 @@ MonoBehaviour:
   _health: 0
   _movementSpeed: 5
   cooldown: 0
-  damage: 0
 --- !u!4 &484434273
 Transform:
   m_ObjectHideFlags: 0
@@ -687,7 +685,6 @@ MonoBehaviour:
   _health: 0
   _movementSpeed: 7
   cooldown: 0
-  damage: 0
 --- !u!4 &545574746
 Transform:
   m_ObjectHideFlags: 0
@@ -852,7 +849,6 @@ MonoBehaviour:
   _health: 0
   _movementSpeed: 5
   cooldown: 0
-  damage: 0
 --- !u!4 &644214251
 Transform:
   m_ObjectHideFlags: 0
@@ -879,10 +875,13 @@ GameObject:
   - component: {fileID: 701089918}
   - component: {fileID: 701089916}
   - component: {fileID: 701089917}
+  - component: {fileID: 701089920}
+  - component: {fileID: 701089919}
   - component: {fileID: 701089915}
+  - component: {fileID: 701089921}
   - component: {fileID: 701089913}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Leader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -928,7 +927,7 @@ SpriteRenderer:
   m_SortingLayerID: 1523849013
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 993262ea8acc0984e9a80b7f83253df5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ed61a8ac948ce4c4eaf9742c73ea0179, type: 3}
   m_Color: {r: 0, g: 0.6784314, b: 0.70980394, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -946,13 +945,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 701089912}
-  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.4, z: 1}
+  m_LocalScale: {x: 0.4, y: 0.2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &701089915
 Rigidbody2D:
   serializedVersion: 4
@@ -973,7 +972,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &701089916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -986,7 +985,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef6f6f01826f1f54185c446d371529aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 12
   Rigidbody: {fileID: 701089915}
   cam: {fileID: 519420031}
 --- !u!114 &701089917
@@ -1024,6 +1022,65 @@ MonoBehaviour:
   allies: []
   formation: {fileID: 701089917}
   movement: {fileID: 701089916}
+  stats: {fileID: 701089920}
+--- !u!114 &701089919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701089912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9614fcbcb30bf84bb8c86abe25eaaf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stats: {fileID: 701089920}
+  attack: {fileID: 8357355823049122581, guid: 47123b41bbf87b54a8392347c07d168c, type: 3}
+  amount: 2
+  spread: 10
+--- !u!114 &701089920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701089912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 375d8ca6136b649499ff9c9081b5bf37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 20
+  _health: 0
+  _movementSpeed: 12
+  cooldown: 1
+--- !u!61 &701089921
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701089912}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &800530715
 GameObject:
   m_ObjectHideFlags: 0
@@ -1290,7 +1347,6 @@ MonoBehaviour:
   _health: 0
   _movementSpeed: 5
   cooldown: 0
-  damage: 0
 --- !u!4 &1368201329
 Transform:
   m_ObjectHideFlags: 0
@@ -1455,7 +1511,6 @@ MonoBehaviour:
   _health: 0
   _movementSpeed: 6
   cooldown: 0
-  damage: 0
 --- !u!4 &1583298564
 Transform:
   m_ObjectHideFlags: 0
@@ -6456,7 +6511,6 @@ MonoBehaviour:
   _health: 0
   _movementSpeed: 6
   cooldown: 0
-  damage: 0
 --- !u!4 &1716070201
 Transform:
   m_ObjectHideFlags: 0
@@ -6621,7 +6675,6 @@ MonoBehaviour:
   _health: 0
   _movementSpeed: 10
   cooldown: 0
-  damage: 0
 --- !u!4 &1868357669
 Transform:
   m_ObjectHideFlags: 0

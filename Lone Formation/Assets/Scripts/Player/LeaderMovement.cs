@@ -1,8 +1,7 @@
 using UnityEngine;
 
 public class LeaderMovement : MonoBehaviour
-{  
-	[SerializeField] float speed;
+{
 	Vector3 inputDirection;
 	public Rigidbody2D Rigidbody;
 	[SerializeField] Camera cam;
@@ -52,7 +51,7 @@ public class LeaderMovement : MonoBehaviour
         //Make diagonal movement no longer move faster than normal
         velocity = inputDirection.normalized;
         //Add the speed to velocity
-        velocity *= speed;
+        velocity *= Leader.i.stats.movementSpeed;
 	}
 
 	void CameraFollow()

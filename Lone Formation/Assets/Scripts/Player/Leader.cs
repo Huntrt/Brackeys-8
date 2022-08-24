@@ -9,6 +9,7 @@ public class Leader : MonoBehaviour
     public List<Allies> allies = new List<Allies>();
 	public Formation formation;
 	public LeaderMovement movement;
+	public Stats stats;
 
 	public void AddAllies(Allies add)
 	{

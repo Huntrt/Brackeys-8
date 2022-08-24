@@ -25,10 +25,11 @@ Enemy:
 		✓ Movement sequence
 		▪ Advanced movement @consider
 	▪ Die:
+		▪ Despawn
 		▪ Destroy
 		▪ Give money
 	▪ Auto cast attack
-Cast: @doing
+Cast: @next
 	▪ Align Pattern:
 		Shoot projectile forward that align vertically
 		▪ Support all amount
@@ -37,16 +38,16 @@ Cast: @doing
 		▪ Squish Align
 			All position will share this value to space accordingly
 		▪ Array of position to fire
-	▪ Cone Pattern:
+	✓ Cone Pattern:
 		Shoot projectile forward in an cone pattern
-		▪ Support all amount
-		▪ Spreading between rotation
-		▪ Array of rotation to fire
-Attacks: @next
+		✓ Support all amount
+		✓ Spreading between rotation
+		✓ Array of rotation to fire
+Attacks:
 	▪ Projectile
-		▪ Move speed
-		▪ Move in rotation
-		▪ Contact with enemy
+		✓ Move speed
+		✓ Move in rotation
+		▪ Contact with enemy @doing
 		▪ Dealt damage
 		▪ Destroy
 
