@@ -1,18 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Health : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	[SerializeField] Stats stats;
+	public event Action takenDamage, onDie;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public void TakeDamage(int taken)
+	{
+		//Take damage and destroy it when it die
+		stats.health -= taken;
+		takenDamage?.Invoke();
+		if(stats.health <= 0)
+		{
+			onDie?.Invoke();
+			Destroy(gameObject);
+		}
+	}
 }

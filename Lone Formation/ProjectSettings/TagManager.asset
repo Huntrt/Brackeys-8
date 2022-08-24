@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Allies
   - Enemy
+  - AlliesAttack
+  - EnemyAttack
   layers:
   - Default
   - TransparentFX
@@ -13,10 +15,10 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Allies
+  - Enemy
+  - AlliesAttack
+  - EnemyAttack
   - 
   - 
   - 

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3220345604125304340}
   - component: {fileID: 2826679502955738198}
   - component: {fileID: -9185040942885547933}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Leader_Attack
   m_TagString: AlliesAttack
   m_Icon: {fileID: 0}
@@ -46,9 +46,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05421ffd9a3c4c3428b0e06c899ddceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 5
+  damage: 1
   velocity: 10
-  range: 5
+  range: 10
   rb: {fileID: 3220345604125304340}
 --- !u!50 &3220345604125304340
 Rigidbody2D:
@@ -62,7 +62,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.0001
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0

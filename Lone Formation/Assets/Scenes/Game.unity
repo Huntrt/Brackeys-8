@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 282641538}
   - component: {fileID: 282641537}
   - component: {fileID: 282641536}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Allies Test (5)
   m_TagString: Allies
   m_Icon: {fileID: 0}
@@ -302,7 +302,7 @@ GameObject:
   - component: {fileID: 484434270}
   - component: {fileID: 484434269}
   - component: {fileID: 484434268}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Allies Test
   m_TagString: Allies
   m_Icon: {fileID: 0}
@@ -549,7 +549,7 @@ GameObject:
   - component: {fileID: 545574743}
   - component: {fileID: 545574742}
   - component: {fileID: 545574741}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Allies Test (7)
   m_TagString: Allies
   m_Icon: {fileID: 0}
@@ -713,7 +713,7 @@ GameObject:
   - component: {fileID: 644214248}
   - component: {fileID: 644214247}
   - component: {fileID: 644214246}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Allies Test (4)
   m_TagString: Allies
   m_Icon: {fileID: 0}
@@ -876,11 +876,12 @@ GameObject:
   - component: {fileID: 701089916}
   - component: {fileID: 701089917}
   - component: {fileID: 701089920}
+  - component: {fileID: 701089922}
   - component: {fileID: 701089919}
   - component: {fileID: 701089915}
   - component: {fileID: 701089921}
   - component: {fileID: 701089913}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Leader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1037,8 +1038,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stats: {fileID: 701089920}
   attack: {fileID: 8357355823049122581, guid: 47123b41bbf87b54a8392347c07d168c, type: 3}
-  amount: 2
-  spread: 10
+  amount: 1
+  spread: 0
 --- !u!114 &701089920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1052,9 +1053,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 20
-  _health: 0
+  _health: 20
   _movementSpeed: 12
-  cooldown: 1
+  cooldown: 0
 --- !u!61 &701089921
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1081,6 +1082,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &701089922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701089912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4703b2e4497eb894f98094b2639af22a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stats: {fileID: 701089920}
 --- !u!1 &800530715
 GameObject:
   m_ObjectHideFlags: 0
@@ -1211,7 +1225,7 @@ GameObject:
   - component: {fileID: 1368201326}
   - component: {fileID: 1368201325}
   - component: {fileID: 1368201324}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Allies Test (6)
   m_TagString: Allies
   m_Icon: {fileID: 0}
@@ -1375,7 +1389,7 @@ GameObject:
   - component: {fileID: 1583298561}
   - component: {fileID: 1583298560}
   - component: {fileID: 1583298559}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Allies Test (2)
   m_TagString: Allies
   m_Icon: {fileID: 0}
@@ -6375,7 +6389,7 @@ GameObject:
   - component: {fileID: 1716070198}
   - component: {fileID: 1716070197}
   - component: {fileID: 1716070196}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Allies Test (1)
   m_TagString: Allies
   m_Icon: {fileID: 0}
@@ -6539,7 +6553,7 @@ GameObject:
   - component: {fileID: 1868357666}
   - component: {fileID: 1868357665}
   - component: {fileID: 1868357664}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Allies Test (3)
   m_TagString: Allies
   m_Icon: {fileID: 0}

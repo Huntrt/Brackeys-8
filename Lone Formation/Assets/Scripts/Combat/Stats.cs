@@ -28,4 +28,9 @@ public class Stats : MonoBehaviour
 			_health = value;
 		}
 	}
+
+	void OnEnable()
+	{
+		_health = maxHealth;
+	}
 }
