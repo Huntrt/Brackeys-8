@@ -1,6 +1,10 @@
-Allies: #00ADB5
+Allies: 
+	Body: #00ADB5
+	Attack: #1FDDE6
 
-Enemy: #E84545
+Enemy: 
+	Body: #E84545
+	Attack: #E82323
 
 Environment: 
 	Background - #0D0F13

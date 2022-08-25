@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2826679502955738198}
   - component: {fileID: -9185040942885547933}
   m_Layer: 8
-  m_Name: Leader_Attack
+  m_Name: Allies_Attack_Leader
   m_TagString: AlliesAttack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

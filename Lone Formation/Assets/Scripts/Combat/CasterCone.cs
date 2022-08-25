@@ -21,8 +21,12 @@ public class CasterCone : Caster
 		//For each of the attack need to create
 		for (int i = amount - 1; i >= 0 ; i--)
 		{
-			//Create attack with the rotation has get and at this position
-			CreateAttack(transform.position, Quaternion.Euler(0,0,angle));
+			CreateAttack
+			(
+				transform.position,
+				//Create attack with the rotation has get in the Z axis
+				Quaternion.Euler(transform.eulerAngles.x, transform.eulerAngles.y, angle)
+			);
 			//Proceed to the next step
 			angle += step;
 		}

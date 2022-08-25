@@ -12,7 +12,7 @@ public class EnemiesManager : MonoBehaviour
 
 	public void SpawnEnemy(Enemy enemy, Vector2 position)
 	{
-		GameObject spawned = Instantiate(enemy.gameObject, position ,Quaternion.identity);
+		GameObject spawned = Instantiate(enemy.gameObject, position ,enemy.transform.localRotation);
 		enemies.Add(spawned.GetComponent<Enemy>());
 	}
 

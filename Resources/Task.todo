@@ -15,6 +15,10 @@ Ship:
 			▪ Destroy
 			▪ Update formation
 		▪ Auto cast attack
+		▪ Buy:
+			▪ Occasionally spawn "assist" caller
+			▪ Cost money to use "assits"
+			▪ "Assist" then give an allies base on it rarity
 Enemy:
 	✓ Spawning
 		✓ In any side of border
