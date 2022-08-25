@@ -34,9 +34,9 @@ Enemy:
 		▪ Adapting to move vertically base on it Y axis
 		▪ Adapting to move horizontally base on it X axis
 	▪ Die:
-		▪ Despawn @doing
+		✓ Despawn
 		✓ Destroy
-		▪ Give money
+		▪ Give money @doing
 	✓ Auto cast attack
 Cast:
 	▪ Align Pattern: @consider

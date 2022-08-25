@@ -106,7 +106,7 @@ MonoBehaviour:
   - move: 0
     duration: 0.4
   - move: 4
-    duration: 0.8
+    duration: 1
   enemy: {fileID: 4164000536478309606}
   rb: {fileID: 4164000536478309609}
 --- !u!114 &5411515328737061753

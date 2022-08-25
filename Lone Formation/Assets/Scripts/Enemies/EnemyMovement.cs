@@ -55,7 +55,12 @@ public class EnemyMovement : MonoBehaviour
 	void NextSequence()
 	{
 		currentId++;
-		if(currentId > sequence.Length-1) {outOfMovement = true; return;}
+		if(currentId > sequence.Length-1) 
+		{
+			//Despawn enemy when out of movement
+			EnemiesManager.i.DespawnEnemy(enemy);
+			outOfMovement = true; return;
+		}
 		curSequence = sequence[currentId];
 		timer -= timer;
 	}
