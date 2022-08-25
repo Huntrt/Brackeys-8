@@ -9,7 +9,7 @@ Ship:
 	▪ Leader:
 		✓ Control by player
 		▪ Game over when die
-	▪ Allies:
+	▪ Allies: @next
 		✓ Follow it point in formation grid
 		▪ Die:
 			▪ Destroy
@@ -25,8 +25,8 @@ Enemy:
 		✓ Movement sequence
 		▪ Advanced movement @consider
 	▪ Die:
-		▪ Despawn
-		▪ Destroy
+		▪ Despawn @doing
+		✓ Destroy
 		▪ Give money
 	▪ Auto cast attack
 Cast: @next
@@ -44,12 +44,12 @@ Cast: @next
 		✓ Spreading between rotation
 		✓ Array of rotation to fire
 Attacks:
-	▪ Projectile
+	✓ Projectile
 		✓ Move speed
 		✓ Move in rotation
-		▪ Contact with enemy @doing
-		▪ Dealt damage
-		▪ Destroy
+		✓ Contact with enemy
+		✓ Dealt damage
+		✓ Destroy
 
 
 		
