@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class Leader : MonoBehaviour
@@ -10,6 +11,21 @@ public class Leader : MonoBehaviour
 	public Formation formation;
 	public LeaderMovement movement;
 	public Stats stats;
+	[Header("Heath")]
+	[SerializeField] Image heathBar;
+	[SerializeField] TMPro.TextMeshProUGUI heathCounter;
+
+	void Update()
+	{
+		DisplayHeath();
+	}
+
+	void DisplayHeath()
+	{
+		//Display the counter and bar
+		heathCounter.text = stats.health + "/" + stats.maxHealth;
+		heathBar.fillAmount = (float)stats.health / (float)stats.maxHealth;
+	}
 
 	public void AddAllies(Allies add)
 	{

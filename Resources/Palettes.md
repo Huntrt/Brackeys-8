@@ -11,6 +11,9 @@ Environment:
 	Stars - #EEEEEE
 	Border - #393E46
 
+Money - #FFDC66
+Heath - #66FF73
+
 https://colorhunt.co/palette/222831393e4600adb5eeeeee
 	#222831
 	#393E46
