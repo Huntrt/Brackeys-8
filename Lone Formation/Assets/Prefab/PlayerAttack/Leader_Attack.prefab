@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6703320321126267555}
-  - component: {fileID: 6189980028643463592}
+  - component: {fileID: -1788089623005236797}
   - component: {fileID: 3220345604125304340}
   - component: {fileID: 2826679502955738198}
   - component: {fileID: -9185040942885547933}
@@ -34,7 +34,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6189980028643463592
+--- !u!114 &-1788089623005236797
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -43,11 +43,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8357355823049122581}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05421ffd9a3c4c3428b0e06c899ddceb, type: 3}
+  m_Script: {fileID: 11500000, guid: c4573cedad0e5d148aa846488393b8a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
-  velocity: 10
+  damage: 3
+  velocity: 15
   range: 10
   rb: {fileID: 3220345604125304340}
 --- !u!50 &3220345604125304340
@@ -111,7 +111,7 @@ SpriteRenderer:
   m_SortingLayerID: 1523849013
   m_SortingLayer: 2
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: ed61a8ac948ce4c4eaf9742c73ea0179, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9eff994114e4eda43ba60148e9f2e1eb, type: 3}
   m_Color: {r: 0.12105259, g: 0.86842126, b: 0.9, a: 1}
   m_FlipX: 0
   m_FlipY: 0

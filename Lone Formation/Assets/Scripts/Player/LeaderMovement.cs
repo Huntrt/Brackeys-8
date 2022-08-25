@@ -57,14 +57,16 @@ public class LeaderMovement : MonoBehaviour
 	void CameraFollow()
 	{
 		//Player position and use it as default destination
-		Vector2 pos = transform.position; Vector2 destination = new Vector2(pos.x, pos.y);
-		//The camera hitbox size
-		Vector2 hitbox = new Vector2(camScale.x/1.05f, camScale.y/1.05f);
-		//@ Stop destination in an axis when camera hitbox touch the border
-		if(pos.x + hitbox.x/2 >= +mapScale.x) destination.x = cam.transform.position.x;
-		if(pos.x - hitbox.x/2 <= -mapScale.x) destination.x = cam.transform.position.x;
-		if(pos.y + hitbox.y/2 >= +mapScale.y) destination.y = cam.transform.position.y;
-		if(pos.y - hitbox.y/2 <= -mapScale.y) destination.y = cam.transform.position.y;
+		Vector2 pos = transform.position; Vector2 destination = pos;
+		//Get the camera view by using half of camera size that got decrease with leader size
+		Vector2 view = (camScale - (Vector2)Leader.i.transform.localScale) /2;
+		//Get snap position to by decrease the map scale with view
+		Vector2 snap = mapScale - view;
+		//@ Snap camera back to map when the view touch the map border
+		if(pos.x + view.x >= +mapScale.x) destination.x = +snap.x;
+		if(pos.x - view.x <= -mapScale.x) destination.x = -snap.x;
+		if(pos.y + view.y >= +mapScale.y) destination.y = +snap.y;
+		if(pos.y - view.y <= -mapScale.y) destination.y = -snap.y;
 		//Make the camera follow destination 
 		cam.transform.position = new Vector3(destination.x, destination.y, -10);
 	}
