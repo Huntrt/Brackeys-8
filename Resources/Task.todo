@@ -11,10 +11,10 @@ Ship:
 		▪ Game over when die
 	▪ Allies: @next
 		✓ Follow it point in formation grid
+		▪ Auto cast attack
 		▪ Die:
 			▪ Destroy
 			▪ Update formation
-		▪ Auto cast attack
 		▪ Buy:
 			▪ Occasionally spawn "assist" caller
 			▪ Cost money to use "assits"
@@ -27,14 +27,19 @@ Enemy:
 		✓ Move in direction
 		✓ Move for how long
 		✓ Movement sequence
-		▪ Advanced movement @consider
+		▪ Standing still
+		▪ Facing the leader in Y axis
+		▪ Hover above leader in X axis
+		▪ Chasing after the leader
+		▪ Adapting to move vertically base on it Y axis
+		▪ Adapting to move horizontally base on it X axis
 	▪ Die:
 		▪ Despawn @doing
 		✓ Destroy
 		▪ Give money
-	▪ Auto cast attack
-Cast: @next
-	▪ Align Pattern:
+	✓ Auto cast attack
+Cast:
+	▪ Align Pattern: @consider
 		Shoot projectile forward that align vertically
 		▪ Support all amount
 		▪ Spacing Align

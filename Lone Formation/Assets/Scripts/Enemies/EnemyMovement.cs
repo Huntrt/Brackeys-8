@@ -13,6 +13,7 @@ public class EnemyMovement : MonoBehaviour
 
 	public enum Move
 	{
+		Still,
 		Up, Down, Left, Right,
 		FaceOff, Hover, Chasing
 	}
@@ -36,6 +37,7 @@ public class EnemyMovement : MonoBehaviour
 		//Get the current move and speed to use
 		Move move = curSequence.move;
 		float speed = enemy.stats.movementSpeed;
+		//Default are standing still
 		Vector2 direction = Vector2.zero;
 		//@ Basic Direction
 		if(move == Move.Up)    direction = new Vector2(0,+1);

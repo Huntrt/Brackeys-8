@@ -1054,8 +1054,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 20
   _health: 20
-  _movementSpeed: 12
-  cooldown: 0
+  _movementSpeed: 10
+  cooldown: 0.5
 --- !u!61 &701089921
 BoxCollider2D:
   m_ObjectHideFlags: 0
