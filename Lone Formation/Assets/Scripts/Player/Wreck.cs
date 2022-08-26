@@ -12,6 +12,7 @@ public class Wreck : MonoBehaviour
 	[SerializeField] SpriteRenderer highlight;
 	[SerializeField] TextMeshProUGUI costDisplay;
 	[SerializeField] Color poor, rich;
+	[SerializeField] GameObject buyParticle;
 	int alliesLayer;
 
     void Start()
@@ -48,6 +49,7 @@ public class Wreck : MonoBehaviour
 				//Buying this wreck when press the key
 				if(Input.GetKey(KeyManager.i.Buy))
 				{
+					Pool.i.Create(buyParticle, transform.position, Quaternion.identity);
 					Economic.i.Spended(cost, true);
 					Instantiate(ship, transform.position, Quaternion.identity);
 					Destroy(gameObject);

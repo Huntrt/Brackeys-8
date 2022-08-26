@@ -2214,6 +2214,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stats: {fileID: 701089920}
   destroy: 0
+  onHitParticle: {fileID: 5290917363521398274, guid: f1c47be8c37593f45a81629464a092e9,
+    type: 3}
+  dieParticle: {fileID: 1570923349123118773, guid: b8d49450f409048458d724c88b46ff08,
+    type: 3}
 --- !u!1 &701577617
 GameObject:
   m_ObjectHideFlags: 0
@@ -5170,7 +5174,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1250513719
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_RenderMode: 0
   m_SortMode: 0
   m_MinParticleSize: 0

@@ -68,6 +68,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stats: {fileID: 4164000536478309605}
+  destroy: 1
+  onHitParticle: {fileID: 4222013262962593270, guid: 4eed3d4f5a163e64895ac183fc65de9c,
+    type: 3}
+  dieParticle: {fileID: 1057314898453681517, guid: 2c8d3fb5c25548745b9494e0f761636b,
+    type: 3}
 --- !u!114 &4164000536478309606
 MonoBehaviour:
   m_ObjectHideFlags: 0
