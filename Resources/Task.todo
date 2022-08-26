@@ -1,7 +1,6 @@
 Map:
 	✓ Customize able scale
 	✓ Border
-	▪ More background particle for more spacey like
 Ship:
 	✓ Formation:
 		✓ In grid shape
@@ -10,19 +9,22 @@ Ship:
 	✓ Leader:
 		✓ Control by player
 		✓ Game over when die
-	▪ Allies:
+	✓ Allies:
 		✓ Follow it point in formation grid
 		✓ Auto cast attack
 		✓ Die:
 			✓ Destroy
 			✓ Update formation
-		▪ Buy: 
+		✓ Buy: 
 			✓ Occasionally spawn "assist" and "wreck"
 			✓ Cost money to use "assits" and "wreck"
-			▪ Buying notify @doing
-			▪ Buying confirmation @doing
+			✓ Buying notify
+			X Buying confirmation
 			✓ "Wreck" will give the allies it represent
-			▪ "Assist" then give an allies base on it rarity @consider
+			X "Assist" then give an allies base on it rarity @consider
+		✓ Health Bar:
+			✓ Displaying
+			✓ Fading
 Enemy:
 	✓ Spawning
 		✓ In any side of border
@@ -37,12 +39,21 @@ Enemy:
 		▪ Chasing after the leader
 		▪ Adapting to move vertically base on it Y axis
 		▪ Adapting to move horizontally base on it X axis
-	▪ Die:
+	✓ Die:
 		✓ Despawn
 		✓ Destroy
 		✓ Give money
-	▪ Collision damage @consider
+	X Collision damage @consider
 	✓ Auto cast attack
+Effects:
+	▪ Take damage
+	▪ Killed
+	▪ Buying
+	▪ Game Over
+	▪ Improve game background
+	▪ Improve Main Menu Background @consider
+	▪ Thruest @consider
+	▪ Muzzle @consider
 Cast:
 	▪ Align Pattern: @consider
 		Shoot projectile forward that align vertically
