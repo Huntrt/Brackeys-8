@@ -7,8 +7,7 @@ public class EnemiesSpawner : MonoBehaviour
 	[Tooltip("This use to scale with difficulty\nThe lower it is the more enemy will spawn")]
 	public float delay;
 	[SerializeField] float spawnPerSecond; float spawnTimer;
-	[System.Serializable] class SpawnData {public GameObject enemy; public float rate;}
-	[SerializeField] SpawnData[] table;
+	[SerializeField] WeightData[] table;
 
     void Start()
 	{
@@ -31,18 +30,18 @@ public class EnemiesSpawner : MonoBehaviour
 	void ChooseWhichEnemyToSpawn()
 	{
 		//Get the total rate of all data to get the chance gonna use
-		float total = 0; for (int d = 0; d < table.Length; d++) total += table[d].rate;
+		float total = 0; for (int d = 0; d < table.Length; d++) total += table[d].weight;
 		float chance = Random.Range(0, total);
 		//Choose which enemy will spawn using weight system
 		for (int d = 0; d < table.Length; d++)
 		{
-			if((chance - table[d].rate) <= 0)
+			if((chance - table[d].weight) <= 0)
 			{
-				SpawnEnemyAtItWantedPosition(table[d].enemy.GetComponent<Enemy>());
+				SpawnEnemyAtItWantedPosition(table[d].obj.GetComponent<Enemy>());
 			}
 			else
 			{
-				chance -= table[d].rate;
+				chance -= table[d].weight;
 			}
 		}
 		

@@ -1,6 +1,7 @@
 Map:
 	✓ Customize able scale
 	✓ Border
+	▪ More background particle for more spacey like
 Ship:
 	✓ Formation:
 		✓ In grid shape
@@ -9,15 +10,17 @@ Ship:
 	▪ Leader:
 		✓ Control by player
 		▪ Game over when die
-	▪ Allies: @next
+	▪ Allies:
 		✓ Follow it point in formation grid
 		▪ Auto cast attack
-		▪ Die:
+		▪ Die: @next
 			▪ Destroy
 			▪ Update formation
-		▪ Buy:
-			▪ Occasionally spawn "assist" caller
-			▪ Cost money to use "assits"
+		▪ Buy: @doing
+			▪ Occasionally spawn "assist" and "wreck"
+			▪ Cost money to use "assits" and "wreck"
+			▪ Buying confirmation
+			▪ "Wreck" will give the allies it represent
 			▪ "Assist" then give an allies base on it rarity
 Enemy:
 	✓ Spawning
@@ -27,7 +30,7 @@ Enemy:
 		✓ Move in direction
 		✓ Move for how long
 		✓ Movement sequence
-		▪ Standing still
+		✓ Standing still
 		▪ Facing the leader in Y axis
 		▪ Hover above leader in X axis
 		▪ Chasing after the leader
@@ -36,7 +39,7 @@ Enemy:
 	▪ Die:
 		✓ Despawn
 		✓ Destroy
-		▪ Give money @doing
+		✓ Give money
 	▪ Collision damage @consider
 	✓ Auto cast attack
 Cast:
