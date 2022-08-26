@@ -54,6 +54,12 @@ Effects:
 	▪ Improve Main Menu Background @consider
 	▪ Thrust @consider
 	▪ Muzzle @consider
+Audio:
+	▪ Take damage
+	▪ Killed
+	▪ Buying
+	▪ Game Over
+	▪ Music @consider
 Cast:
 	▪ Align Pattern: @consider
 		Shoot projectile forward that align vertically
