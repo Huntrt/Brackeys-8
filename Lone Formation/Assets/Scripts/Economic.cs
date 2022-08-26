@@ -9,12 +9,16 @@ public class Economic : MonoBehaviour
 	public TextMeshProUGUI counter;
 
 	//Return bool base on if there still money to spend
-	public bool Spended(int price)
+	public bool Spended(int price, bool bought)
 	{
 		if(money >= price)
 		{
-			money -= price;
-			UpdateUI();
+			//Check if this is use for buying or just checking
+			if(bought)
+			{	
+				money -= price;
+				UpdateUI();
+			}
 			return true;
 		}
 		return false;
