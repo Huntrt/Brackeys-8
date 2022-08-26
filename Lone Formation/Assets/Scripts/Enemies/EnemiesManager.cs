@@ -19,7 +19,7 @@ public class EnemiesManager : MonoBehaviour
 
 	public void KillEnemy(Enemy enemy)
 	{
-		//todo: drop money and difficulty scaling?
+		//consider: difficulty scaling?
 		enemyKilled++;
 		DespawnEnemy(enemy);
 	}

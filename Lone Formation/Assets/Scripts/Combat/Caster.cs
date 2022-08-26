@@ -22,6 +22,6 @@ public class Caster : MonoBehaviour
 	protected void CreateAttack(Vector2 pos, Quaternion rot)
 	{
 		//Create the attack then set it damage and velocity from stats
-		GameObject attacked = Instantiate(attack, pos, rot);
+		GameObject attacked = Pool.i.Create(attack, pos, rot);
 	}
 }
