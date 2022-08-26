@@ -20,8 +20,8 @@ public class AttackProjectile : Attack
 		traveled += Vector2.Distance(prePos, rb.position);
 		//Destroy the game object when reached range
 		if(traveled >= range) AttackOver();
-		//Move the attack in the red arrow
-		rb.velocity = transform.right * velocity;
+		//Move the attack in the red arrow with velocity has get
+		rb.MovePosition(rb.position + ((Vector2)transform.right * velocity) * Time.fixedDeltaTime);
 		//Update the precvious position
 		prePos = rb.position;
 	}
