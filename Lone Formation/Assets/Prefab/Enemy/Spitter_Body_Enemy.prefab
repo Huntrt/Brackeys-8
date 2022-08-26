@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 4164000536478309609}
   - component: {fileID: 4164000536478309610}
   m_Layer: 7
-  m_Name: Enemy_Body_Spitter
+  m_Name: Spitter_Body_Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
