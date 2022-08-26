@@ -30,10 +30,13 @@ public class Leader : MonoBehaviour
 	public void AddAllies(Allies add)
 	{
 		allies.Add(add);
-		//todo: Make sure to fix id when remove allies
-		add.id = allies.Count;
 		formation.CreateGoal();
 	}
 
-	//todo: remove allies
+	public void RemoveAllies(Allies remove)
+	{
+		allies.Remove(remove);
+		formation.CreateGoal();
+	}
+
 }
