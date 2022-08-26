@@ -575,15 +575,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   alliesToUse: []
   wreckTable:
-    delay: 3
+    delay: 1
     perSecond: 0
     timer: 0
-    weightList: []
-  assistTable:
-    delay: 6
-    perSecond: 0
-    timer: 0
-    weightList: []
+    weightList:
+    - obj: {fileID: 7193636795754073207, guid: 99efd2ecf3dd81645b387c573671dcb5, type: 3}
+      weight: 0
 --- !u!114 &200271698
 MonoBehaviour:
   m_ObjectHideFlags: 0
