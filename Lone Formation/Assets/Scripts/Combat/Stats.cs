@@ -4,10 +4,11 @@ public class Stats : MonoBehaviour
 {
     public int maxHealth;
 	[SerializeField] int _health;
+	public Health healthFunction;
 	[SerializeField] [Range(0,50)] float _movementSpeed;
 	public float cooldown;
 
-	//ignore: Cap movement speed at 50
+	//note: Cap movement speed at 50
 	public float movementSpeed 
 	{
 		get => _movementSpeed; 

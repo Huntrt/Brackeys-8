@@ -4,6 +4,7 @@ using System;
 public class Health : MonoBehaviour
 {
 	[SerializeField] Stats stats;
+	[SerializeField] bool destroy = true;
 	public event Action takenDamage, onDie;
 
     public void TakeDamage(int taken)
@@ -14,7 +15,8 @@ public class Health : MonoBehaviour
 		if(stats.health <= 0)
 		{
 			onDie?.Invoke();
-			Destroy(gameObject);
+			//Only disable if leader
+			if(destroy) Destroy(gameObject);
 		}
 	}
 }

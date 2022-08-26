@@ -8,9 +8,9 @@ public class Leader : MonoBehaviour
 	public static Leader i {get{if(_i==null){_i = GameObject.FindObjectOfType<Leader>();}return _i;}} static Leader _i;
 
     public List<Allies> allies = new List<Allies>();
-	public Formation formation;
-	public LeaderMovement movement;
 	public Stats stats;
+	public LeaderMovement movement;
+	public Formation formation;
 	[Header("Heath")]
 	[SerializeField] Image heathBar;
 	[SerializeField] TMPro.TextMeshProUGUI heathCounter;
@@ -34,4 +34,6 @@ public class Leader : MonoBehaviour
 		add.id = allies.Count;
 		formation.CreateGoal();
 	}
+
+	//todo: remove allies
 }

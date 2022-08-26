@@ -52,6 +52,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 3
   _health: 0
+  healthFunction: {fileID: 725870177395529416}
   _movementSpeed: 6
   cooldown: 0.3
 --- !u!114 &725870177395529416
@@ -81,6 +82,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stats: {fileID: 4164000536478309605}
   movement: {fileID: 4164000536478309607}
+  bounty: 2
   spawning:
     direction: 3
     focusCenter: 70
