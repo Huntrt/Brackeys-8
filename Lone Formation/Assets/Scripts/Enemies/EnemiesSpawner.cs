@@ -7,7 +7,7 @@ public class EnemiesSpawner : MonoBehaviour
 	[Tooltip("This use to scale with difficulty\nThe lower it is the more enemy will spawn")]
 	public float delay;
 	[SerializeField] float spawnPerSecond; float spawnTimer;
-	[SerializeField] WeightData[] table;
+	[SerializeField] WeightData[] enemyTable;
 
     void Start()
 	{
@@ -22,32 +22,13 @@ public class EnemiesSpawner : MonoBehaviour
 		spawnTimer += Time.deltaTime;
 		if(spawnTimer >= spawnPerSecond)
 		{
-			ChooseWhichEnemyToSpawn();
+			//Spawn enemy in an postion after weighted them
+			SpawnEnemyInPosition(General.WeightingResult(enemyTable).GetComponent<Enemy>());
 			spawnTimer -= spawnTimer;
 		}
 	}
 
-	void ChooseWhichEnemyToSpawn()
-	{
-		//Get the total rate of all data to get the chance gonna use
-		float total = 0; for (int d = 0; d < table.Length; d++) total += table[d].weight;
-		float chance = Random.Range(0, total);
-		//Choose which enemy will spawn using weight system
-		for (int d = 0; d < table.Length; d++)
-		{
-			if((chance - table[d].weight) <= 0)
-			{
-				SpawnEnemyAtItWantedPosition(table[d].obj.GetComponent<Enemy>());
-			}
-			else
-			{
-				chance -= table[d].weight;
-			}
-		}
-		
-	}
-
-	void SpawnEnemyAtItWantedPosition(Enemy enemy)
+	void SpawnEnemyInPosition(Enemy enemy)
 	{
 		//Get the map scale
 		Vector2 scale = Map.i.scale;
@@ -55,21 +36,21 @@ public class EnemiesSpawner : MonoBehaviour
 		switch((int)enemy.spawning.direction)
 		{
 			case 0:
-				manager.SpawnEnemy(enemy, new Vector2(SpawnCenterPercent(enemy, scale.x), scale.y));
+				manager.SpawnEnemy(enemy, new Vector2(CenteringAxis(enemy, scale.x), scale.y));
 			break;
 			case 1:
-				manager.SpawnEnemy(enemy, new Vector2(SpawnCenterPercent(enemy, scale.x), -scale.y));
+				manager.SpawnEnemy(enemy, new Vector2(CenteringAxis(enemy, scale.x), -scale.y));
 			break;
 			case 2:
-				manager.SpawnEnemy(enemy, new Vector2(-scale.x, SpawnCenterPercent(enemy, scale.y)));
+				manager.SpawnEnemy(enemy, new Vector2(-scale.x, CenteringAxis(enemy, scale.y)));
 			break;
 			case 3:
-				manager.SpawnEnemy(enemy, new Vector2(scale.x, SpawnCenterPercent(enemy, scale.y)));
+				manager.SpawnEnemy(enemy, new Vector2(scale.x, CenteringAxis(enemy, scale.y)));
 			break;
 		}
 	}
 
-	float SpawnCenterPercent(Enemy enemy, float axis)
+	float CenteringAxis(Enemy enemy, float axis)
 	{
 		//How many percent able to spawn outside the center
 		float centering = (enemy.spawning.focusCenter/100) * axis;

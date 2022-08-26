@@ -574,6 +574,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   alliesToUse: []
+  wreckTable:
+    delay: 3
+    perSecond: 0
+    timer: 0
+    weightList: []
+  assistTable:
+    delay: 6
+    perSecond: 0
+    timer: 0
+    weightList: []
+  map: {fileID: 800530717}
 --- !u!114 &200271698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4354,8 +4365,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delay: 1
   spawnPerSecond: 0
-  table:
-  - obj: {fileID: 0}
+  enemyTable:
+  - obj: {fileID: 4164000536478309611, guid: 085fce68861d552479d3aa3929e4bc03, type: 3}
     weight: 0
 --- !u!114 &1090349360
 MonoBehaviour:
