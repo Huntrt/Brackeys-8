@@ -7,21 +7,22 @@ Ship:
 		✓ In grid shape
 		X Customize width and length
 		✓ Follow the leader
-	▪ Leader:
+	✓ Leader:
 		✓ Control by player
-		▪ Game over when die
+		✓ Game over when die
 	▪ Allies:
 		✓ Follow it point in formation grid
-		▪ Auto cast attack
-		▪ Die: @next
-			▪ Destroy
-			▪ Update formation
-		▪ Buy: @doing
-			▪ Occasionally spawn "assist" and "wreck"
-			▪ Cost money to use "assits" and "wreck"
-			▪ Buying confirmation
-			▪ "Wreck" will give the allies it represent
-			▪ "Assist" then give an allies base on it rarity
+		✓ Auto cast attack
+		✓ Die:
+			✓ Destroy
+			✓ Update formation
+		▪ Buy: 
+			✓ Occasionally spawn "assist" and "wreck"
+			✓ Cost money to use "assits" and "wreck"
+			▪ Buying notify @doing
+			▪ Buying confirmation @doing
+			✓ "Wreck" will give the allies it represent
+			▪ "Assist" then give an allies base on it rarity @consider
 Enemy:
 	✓ Spawning
 		✓ In any side of border

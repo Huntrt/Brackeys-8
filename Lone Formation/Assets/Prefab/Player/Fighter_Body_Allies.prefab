@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3412405138313030827}
   - component: {fileID: 1197197374571018855}
   - component: {fileID: 4078193929668787337}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Fighter_Body_Allies
   m_TagString: Allies
   m_Icon: {fileID: 0}
@@ -51,7 +51,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stats: {fileID: 1038946253220849034}
   rb: {fileID: 1197197374571018855}
-  id: 0
 --- !u!114 &1038946253220849034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67,8 +66,8 @@ MonoBehaviour:
   maxHealth: 10
   _health: 0
   healthFunction: {fileID: 7757988638270348970}
-  _movementSpeed: 10
-  cooldown: 0.1
+  _movementSpeed: 8
+  cooldown: 0.7
 --- !u!114 &7757988638270348970
 MonoBehaviour:
   m_ObjectHideFlags: 0

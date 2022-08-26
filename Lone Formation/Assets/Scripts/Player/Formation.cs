@@ -21,6 +21,7 @@ public class Formation : MonoBehaviour
 		Vector2[] initGoal = new Vector2[amount];
 
 		/// Create grid
+		//Start at the leader position
 		Vector2 currentPos = Vector2.zero;
 		//Count how many column has reach
 		int columnReached = -1; 
@@ -55,10 +56,17 @@ public class Formation : MonoBehaviour
 			//Align initial goal base on row and column
 			initGoal[g].x -= spacing.x * axis.column;
 			initGoal[g].y -= spacing.y * ((axis.row-1)/2);
-			//Creating goal
-			GameObject goal = Instantiate(goalPrefab, initGoal[g], Quaternion.identity);
-			goal.transform.SetParent(goalGrouper.transform);
-			goals[g] = goal.transform;
+			//Create the goal then parent it and set it LOCAL position after that
+			GameObject goaled = Instantiate(goalPrefab);
+			goaled.transform.SetParent(goalGrouper.transform);
+			goaled.transform.localPosition = initGoal[g];
+			goals[g] = goaled.transform;
+		}
+
+		/// Make all the allies get it goal
+		for (int a = 0; a < Leader.i.allies.Count; a++)
+		{
+			Leader.i.allies[a].GetGoal();
 		}
 		//Send event when complete goal formation
 		formationed?.Invoke();

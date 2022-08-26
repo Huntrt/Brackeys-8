@@ -4,7 +4,7 @@ public class Wreck : MonoBehaviour
 {
 	[SerializeField] GameObject ship;
 	[SerializeField] int cost;
-	[SerializeField] float speed, hitbox;
+	[SerializeField] float speed, hitbox, lifeTime;
 	[SerializeField] Rigidbody2D rb;
 	int alliesLayer;
 
@@ -14,6 +14,7 @@ public class Wreck : MonoBehaviour
 		alliesLayer = LayerMask.GetMask("Allies");
 		//Randomly rotation upon spawn
         transform.localRotation = Quaternion.Euler(0,0,Random.Range(0f,360f));
+		Destroy(gameObject, lifeTime);
     }
 
 	void Update()

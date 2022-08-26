@@ -4854,6 +4854,7 @@ MonoBehaviour:
   cost: 10
   speed: 5
   hitbox: 3
+  lifeTime: 10
   rb: {fileID: -4322117797773610325}
 --- !u!212 &3412405138313030827
 SpriteRenderer:
