@@ -1,9 +1,12 @@
+using UnityEngine.UI;
 using UnityEngine;
 
 public class Allies : MonoBehaviour
 {
 	[SerializeField] Stats stats;
 	[SerializeField] Rigidbody2D rb;
+	[SerializeField] Image healthBar; 
+	[SerializeField] float healthBarFade; float hBTimer;
 	Formation formation;
 	Transform goal;
 	Map map;
@@ -13,7 +16,27 @@ public class Allies : MonoBehaviour
 		map = Map.i;
 		formation = Leader.i.formation;
 		Leader.i.AddAllies(this);
+		stats.healthFunction.takeDamage += ShowHealthBar;
 		stats.healthFunction.onDie += Killed;
+	}
+
+	void Update()
+	{	
+		DisplayHealthInfo();
+	}
+
+    void FixedUpdate()
+	{
+		//Get direction toward the goal 
+		Vector2 dir = (Vector2)goal.position - rb.position;
+		//Prevent allies from go out of map
+		rb.position = new Vector2
+		(
+			Mathf.Clamp(rb.position.x, -map.scale.x, map.scale.x),
+			Mathf.Clamp(rb.position.y, -map.scale.y, map.scale.y)
+		);
+		//Moving toward that direction of that goal
+		rb.MovePosition(rb.position + (dir * stats.movementSpeed) * Time.fixedDeltaTime);
 	}
 
 	void Killed()
@@ -32,17 +55,19 @@ public class Allies : MonoBehaviour
 		}
 	}
 
-    void FixedUpdate()
+	void DisplayHealthInfo()
 	{
-		//Get direction toward the goal 
-		Vector2 dir = (Vector2)goal.position - rb.position;
-		//Prevent allies from go out of map
-		rb.position = new Vector2
-		(
-			Mathf.Clamp(rb.position.x, -map.scale.x, map.scale.x),
-			Mathf.Clamp(rb.position.y, -map.scale.y, map.scale.y)
-		);
-		//Moving toward that direction of that goal
-		rb.MovePosition(rb.position + (dir * stats.movementSpeed) * Time.fixedDeltaTime);
+		//Filling heath bar
+		healthBar.fillAmount = (float)stats.health / (float)stats.maxHealth;
+		//Begin fading after showing health bar
+		if(hBTimer > 0) hBTimer -= Time.deltaTime; else healthBar.transform.parent.gameObject.SetActive(false);
+	}
+
+	void ShowHealthBar() {healthBar.transform.parent.gameObject.SetActive(true); hBTimer = healthBarFade;}
+
+	void OnDisable()
+	{
+		stats.healthFunction.takeDamage -= ShowHealthBar;
+		stats.healthFunction.onDie -= Killed;
 	}
 }

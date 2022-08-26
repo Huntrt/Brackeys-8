@@ -11,20 +11,20 @@ public class Leader : MonoBehaviour
 	public Stats stats;
 	public LeaderMovement movement;
 	public Formation formation;
-	[Header("Heath")]
-	[SerializeField] Image heathBar;
-	[SerializeField] TMPro.TextMeshProUGUI heathCounter;
+	[Header("health")]
+	[SerializeField] Image healthBar;
+	[SerializeField] TMPro.TextMeshProUGUI healthCounter;
 
 	void Update()
 	{
-		DisplayHeath();
+		DisplayHealth();
 	}
 
-	void DisplayHeath()
+	void DisplayHealth()
 	{
 		//Display the counter and bar
-		heathCounter.text = stats.health + "/" + stats.maxHealth;
-		heathBar.fillAmount = (float)stats.health / (float)stats.maxHealth;
+		healthCounter.text = stats.health + "/" + stats.maxHealth;
+		healthBar.fillAmount = (float)stats.health / (float)stats.maxHealth;
 	}
 
 	public void AddAllies(Allies add)

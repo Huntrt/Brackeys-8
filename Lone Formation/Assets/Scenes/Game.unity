@@ -2139,8 +2139,8 @@ MonoBehaviour:
   stats: {fileID: 701089920}
   movement: {fileID: 701089916}
   formation: {fileID: 701089917}
-  heathBar: {fileID: 1200969282}
-  heathCounter: {fileID: 447539685}
+  healthBar: {fileID: 1200969282}
+  healthCounter: {fileID: 447539685}
 --- !u!114 &701089919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2545,7 +2545,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.2509804, g: 0.5019608, b: 0.2737968, a: 1}
+  m_Color: {r: 0.15, g: 0.3, b: 0.1640625, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
