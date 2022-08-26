@@ -40,8 +40,13 @@ public class LeaderMovement : MonoBehaviour
 
 	Vector2 velocity; void MoveInput()
 	{
-		//Set the input horizontal and vertical direction
-		inputDirection = new Vector3(Input.GetAxisRaw("Horizontal"),Input.GetAxisRaw("Vertical"),0);
+		//Using binded key to use for input direction 
+		KeyManager key = KeyManager.i;
+		inputDirection = Vector2.zero;
+		if(Input.GetKey(key.Up))    inputDirection.y = +1;
+		if(Input.GetKey(key.Down))  inputDirection.y = -1;
+		if(Input.GetKey(key.Left))  inputDirection.x = -1;
+		if(Input.GetKey(key.Right)) inputDirection.x = +1;
 		//@ Prevent movement got slow when hug border
 		Vector2 pos = transform.position;
 		if(inputDirection.x == 01 && pos.x >= +mapScale.x) inputDirection.x = 0;

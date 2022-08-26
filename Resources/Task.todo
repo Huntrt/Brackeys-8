@@ -52,6 +52,9 @@ Cast:
 		✓ Support all amount
 		✓ Spreading between rotation
 		✓ Array of rotation to fire
+	▪ Customize Point: @consider
+		▪ Array of transform
+		▪ Use those transfrom to create attack
 Attacks:
 	✓ Projectile
 		✓ Move speed
