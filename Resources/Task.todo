@@ -37,6 +37,7 @@ Enemy:
 		✓ Despawn
 		✓ Destroy
 		▪ Give money @doing
+	▪ Collision damage @consider
 	✓ Auto cast attack
 Cast:
 	▪ Align Pattern: @consider
