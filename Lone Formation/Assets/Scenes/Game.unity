@@ -691,8 +691,26 @@ MonoBehaviour:
     perSecond: 0
     timer: 0
     weightList:
+    - obj: {fileID: 0}
+      weight: 1000
     - obj: {fileID: 7193636795754073207, guid: 99efd2ecf3dd81645b387c573671dcb5, type: 3}
-      weight: 0
+      weight: 130
+    - obj: {fileID: 3794902853130747117, guid: 93d73b23545f5114686168f3ee85f392, type: 3}
+      weight: 120
+    - obj: {fileID: 7059842617692171911, guid: 3e54ef82d260eab4a88b5f77247dfbb0, type: 3}
+      weight: 100
+    - obj: {fileID: 797308838774818593, guid: fb0fadef6e12c2e4295fd55c4fbfeca8, type: 3}
+      weight: 90
+    - obj: {fileID: 1698489430194914116, guid: b8724302801955242b1f9d5c0db7a3ea, type: 3}
+      weight: 65
+    - obj: {fileID: 6617438211258957146, guid: 4ca3aefdb3876a94ba5d0f48866d7493, type: 3}
+      weight: 50
+    - obj: {fileID: 6665631519621570543, guid: 25b63596ba1edd044a015b6068bec1f0, type: 3}
+      weight: 30
+    - obj: {fileID: 7865859284744814318, guid: 696806b972737e2439dbc878a1ffda6f, type: 3}
+      weight: 15
+    - obj: {fileID: 3058537608893334585, guid: b23f0a4c79b323f4fac5a6d71c3020d5, type: 3}
+      weight: 10
 --- !u!114 &200271698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4163,15 +4181,15 @@ MonoBehaviour:
   spawnPerSecond: 0
   enemyTable:
   - obj: {fileID: 3564844924565007491, guid: d261baf757edf1e45b3d8a1c8c3e1e7c, type: 3}
-    weight: 0
+    weight: 100
   - obj: {fileID: 4164000536478309611, guid: 085fce68861d552479d3aa3929e4bc03, type: 3}
-    weight: 5
+    weight: 50
   - obj: {fileID: 8004267811993475418, guid: f3448b5e1098a544ebd257a1b3b288a9, type: 3}
-    weight: 5
+    weight: 30
   - obj: {fileID: 1634060859821721726, guid: 1d3fe7847427ea44fa321bae73cda7f7, type: 3}
-    weight: 5
+    weight: 25
   - obj: {fileID: 4417825265119128515, guid: e8ac160491ad4e44b846959ac0f54d24, type: 3}
-    weight: 5
+    weight: 10
 --- !u!114 &1090349360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11656,7 +11674,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1752508227
 Transform:
   m_ObjectHideFlags: 0
