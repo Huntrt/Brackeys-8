@@ -16,7 +16,7 @@ public class Allies : MonoBehaviour
 		map = Map.i;
 		formation = Leader.i.formation;
 		Leader.i.AddAllies(this);
-		stats.healthFunction.takeDamage += ShowHealthBar;
+		stats.healthFunction.takeDamage += TakingDamage;
 		stats.healthFunction.onDie += Killed;
 	}
 
@@ -39,11 +39,18 @@ public class Allies : MonoBehaviour
 		rb.MovePosition(rb.position + (dir * stats.movementSpeed) * Time.fixedDeltaTime);
 	}
 
+	void TakingDamage() 
+	{
+		Audios.i.alliesHurtPlay();
+		healthBar.transform.parent.gameObject.SetActive(true); 
+		hBTimer = healthBarFade;
+	}
+
 	void Killed()
 	{
+		Audios.i.alliesDiePlay();
 		Leader.i.RemoveAllies(this);
 		Destroy(gameObject);
-		stats.healthFunction.onDie -= Killed;
 	}
 
 	public void GetGoal()
@@ -63,11 +70,9 @@ public class Allies : MonoBehaviour
 		if(hBTimer > 0) hBTimer -= Time.deltaTime; else healthBar.transform.parent.gameObject.SetActive(false);
 	}
 
-	void ShowHealthBar() {healthBar.transform.parent.gameObject.SetActive(true); hBTimer = healthBarFade;}
-
 	void OnDisable()
 	{
-		stats.healthFunction.takeDamage -= ShowHealthBar;
+		stats.healthFunction.takeDamage -= TakingDamage;
 		stats.healthFunction.onDie -= Killed;
 	}
 }

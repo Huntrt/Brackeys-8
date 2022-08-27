@@ -15,15 +15,27 @@ public class Enemy : MonoBehaviour
 
 	void Start()
 	{
+		stats.healthFunction.takeDamage += TakingDamage;
 		//Are killed when die via out of health
 		stats.healthFunction.onDie += Killed;
 	}
 
+	void TakingDamage()
+	{
+		Audios.i.enemyHurtPlay();
+	}
+
 	void Killed()
 	{
-		stats.healthFunction.onDie -= Killed;
+		Audios.i.enemyDiePlay();
 		//Earn bounty then kill it in manager
 		Economic.i.Earn(bounty);
 		EnemiesManager.i.KillEnemy(this);
+	}
+
+	void OnDisable()
+	{
+		stats.healthFunction.takeDamage -= TakingDamage;
+		stats.healthFunction.onDie -= Killed;
 	}
 }

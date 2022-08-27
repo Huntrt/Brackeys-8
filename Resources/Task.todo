@@ -25,6 +25,10 @@ Ship:
 		✓ Health Bar:
 			✓ Displaying
 			✓ Fading
+	▪ Upgrade @consider
+	▪ Logging: @consider
+		▪ New ship join fleet
+		▪ Allies got killed
 Enemy:
 	✓ Spawning
 		✓ In any side of border
