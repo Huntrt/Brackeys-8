@@ -16,7 +16,7 @@ public class EnemyMeteorite : Enemy
 		//Set the size according to health has use
 		transform.localScale = new Vector2(scaleCap,scaleCap);
 		//Bounty equal to it heath
-		bounty = stats.health/4;
+		bounty = stats.health/10;
 		//Randomize speed
 		stats.movementSpeed = Random.Range(minSpeed, stats.movementSpeed);
     }
