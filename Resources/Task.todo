@@ -38,7 +38,7 @@ Enemy:
 		✓ Move for how long
 		✓ Movement sequence
 		✓ Standing still
-		▪ Facing the leader in Y axis
+		▪ Facing the leader in Y axis @doing
 		▪ Hover above leader in X axis
 		▪ Chasing after the leader
 		▪ Adapting to move vertically base on it Y axis
@@ -65,7 +65,7 @@ Audio:
 	✓ Game Over
 	▪ Music @consider
 Cast:
-	▪ Align Pattern: @consider
+	▪ Align Pattern: @next
 		Shoot projectile forward that align vertically
 		▪ Support all amount
 		▪ Spacing Align
@@ -78,6 +78,10 @@ Cast:
 		✓ Support all amount
 		✓ Spreading between rotation
 		✓ Array of rotation to fire
+	▪ Accuracy Pattern: @next
+		Shoot 1 projectile an in random angle
+		▪ Support all degree
+		▪ Randomly choose an degree
 	▪ Customize Point: @consider
 		▪ Array of transform
 		▪ Use those transfrom to create attack

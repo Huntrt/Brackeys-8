@@ -110,8 +110,8 @@ MonoBehaviour:
   sequence:
   - move: 3
     duration: 0.8
-  - move: 0
-    duration: 0.4
+  - move: 9
+    duration: 0.2
   - move: 4
     duration: 1
   enemy: {fileID: 4164000536478309606}
