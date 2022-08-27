@@ -38,11 +38,11 @@ Enemy:
 		✓ Move for how long
 		✓ Movement sequence
 		✓ Standing still
-		▪ Facing the leader in Y axis @doing
-		▪ Hover above leader in X axis
-		▪ Chasing after the leader
-		▪ Adapting to move vertically base on it Y axis
-		▪ Adapting to move horizontally base on it X axis
+		✓ Facing the leader in Y axis
+		✓ Hover above leader in X axis
+		✓ Chasing after the leader
+		✓ Adapting to move vertically base on it Y axis
+		✓ Adapting to move horizontally base on it X axis
 	✓ Die:
 		✓ Despawn
 		✓ Destroy
@@ -58,6 +58,12 @@ Effects:
 	▪ Improve Main Menu Background @consider
 	▪ Thrust @consider
 	▪ Muzzle @consider
+Difficulty:
+	▪ Increasing difficulty
+	▪ Enemy spawning rate
+	▪ Enemy spawning quality @consider
+	▪ Allies spawn rate @consider
+		Remove empty allies as difficulty increase
 Audio:
 	✓ Take damage
 	✓ Killed
@@ -65,7 +71,7 @@ Audio:
 	✓ Game Over
 	▪ Music @consider
 Cast:
-	▪ Align Pattern: @next
+	▪ Align Pattern: @doing
 		Shoot projectile forward that align vertically
 		▪ Support all amount
 		▪ Spacing Align
