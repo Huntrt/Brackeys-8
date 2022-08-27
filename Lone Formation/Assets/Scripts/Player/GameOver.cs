@@ -28,9 +28,8 @@ public class GameOver : MonoBehaviour
 		killed.text = "Killed <b>" + EnemiesManager.i.enemyKilled + "</b> enemy";
 		allies.text = "Reached an fleet with <b>" + peakAllies + "</b> ship";
 		leader.gameObject.SetActive(false);
-		//consider: Hide all UI when die
 		for (int g = 0; g < hideUIs.Length; g++) hideUIs[g].SetActive(false);
-		//consider: pause game when die
+		Time.timeScale = 0;
 		panel.SetActive(true);
 	}
 }

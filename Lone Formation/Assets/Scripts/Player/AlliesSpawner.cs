@@ -3,12 +3,12 @@ using UnityEngine;
 public class AlliesSpawner : MonoBehaviour
 {
     [SerializeField] GameObject[] alliesToUse;
-    [SerializeField] Table wreckTable; //consider: could use assist
+    [SerializeField] Table wreckTable;
 	Map map;
 
 	[System.Serializable] class Table
 	{
-		public float delay, perSecond; //consider: might scale with difficulty
+		public float delay, perSecond;
 		[HideInInspector] public float timer;
 	    public WeightData[] weightList;
 	}
