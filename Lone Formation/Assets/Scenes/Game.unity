@@ -2393,7 +2393,7 @@ MonoBehaviour:
   maxHealth: 100
   _health: 100
   healthFunction: {fileID: 701089922}
-  _movementSpeed: 10
+  _movementSpeed: 7
   cooldown: 0.5
 --- !u!61 &701089921
 BoxCollider2D:
@@ -23121,6 +23121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 17
+  attackParticle: {fileID: 0}
   velocity: 10
   range: 9
   rb: {fileID: 8578459374123224446}
@@ -23554,6 +23555,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 25
+  attackParticle: {fileID: 0}
   velocity: 5
   range: 10
   rb: {fileID: 1550808709507607012}

@@ -47,6 +47,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 3
+  attackParticle: {fileID: 4582195286599839068, guid: b3020f050d4e492439cc6e16025ddbfe,
+    type: 3}
   velocity: 10
   range: 12
   rb: {fileID: 2233885642177463032}

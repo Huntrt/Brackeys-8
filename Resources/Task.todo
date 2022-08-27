@@ -25,7 +25,7 @@ Ship:
 		✓ Health Bar:
 			✓ Displaying
 			✓ Fading
-	▪ Upgrade @consider
+	X Upgrade @consider
 	X Logging: @consider
 		X New ship join fleet
 		X Allies got killed
@@ -55,15 +55,15 @@ Effects:
 	✓ Buying
 	✓ Game Over
 	✓ Improve game background
-	▪ Attack Hit @consider
-	▪ Improve Main Menu Background @consider
-	▪ Thrust @consider
-	▪ Muzzle @consider
+	✓ Attack Hit
+	▪ Improve Main Menu Background @doing
+	X Thrust @consider
+	X Muzzle @consider
 Difficulty:
-	▪ Increasing difficulty
-	▪ Enemy spawning rate
-	▪ Enemy spawning quality @consider
-	▪ Allies spawn rate @consider
+	✓ Increasing difficulty
+	✓ Enemy spawning rate
+	✓ Enemy heath scale
+	X Allies spawn rate @consider
 		Remove empty allies as difficulty increase
 Audio:
 	✓ Take damage

@@ -13,7 +13,7 @@
 		+ Projectile
 		- Damage = 15
 		- Velocity = 8
-		- Range = 7
+		- Range = 30
 	- BOUNTY = 4
 
 # Quad
@@ -30,7 +30,7 @@
 		+ Projectile
 		- Damage = 25
 		- Velocity = 5
-		- Range = 10
+		- Range = 15
 	- BOUNTY = 10
 
 # Duals
@@ -47,7 +47,7 @@
 		+ Projectile
 		- Damage = 10
 		- Velocity = 7
-		- Range = 5
+		- Range = 15
 	- BOUNTY = 8
 
 # Spray
@@ -64,6 +64,6 @@
 		+ Projectile
 		- Damage = 15
 		- Velocity = 6
-		- Range = 8
+		- Range = 7
 	- BOUNTY = 15
 

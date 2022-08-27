@@ -69,7 +69,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stats: {fileID: 3564844924565007501}
   movement: {fileID: 3564844924565007503}
-  bounty: 10
+  bounty: 0
   danger: 0.2
   healthScaling: 0
   spawning:
