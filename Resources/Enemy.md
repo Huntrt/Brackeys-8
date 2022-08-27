@@ -3,17 +3,18 @@
 
 # Spitter:
 	- HP = 35
-	- SPD = 6
+	- SPD = 3
 	- Movement:
 		Enter then stay still
 	- Pattern:
 		+ None
-		- Cooldown = 0.5
+		- Cooldown = 1
 	- Attack:
 		+ Projectile
 		- Damage = 15
 		- Velocity = 8
 		- Range = 7
+	- BOUNTY = 10
 
 # Quad
 	- HP = 20
@@ -30,6 +31,7 @@
 		- Damage = 25
 		- Velocity = 5
 		- Range = 15
+	- BOUNTY = 30
 
 # Duals
 	- HP = 30
@@ -46,6 +48,7 @@
 		- Damage = 10
 		- Velocity = 7
 		- Range = 5
+	- BOUNTY = 20
 
 # Spray
 	- HP = 20
@@ -62,4 +65,5 @@
 		- Damage = 15
 		- Velocity = 3
 		- Range = 8
+	- BOUNTY = 35
 

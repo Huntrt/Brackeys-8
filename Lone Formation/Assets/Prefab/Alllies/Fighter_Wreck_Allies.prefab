@@ -5252,7 +5252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ship: {fileID: 7193636795754073207, guid: b2b849c4d374cf94f9285d2cbe8d181a, type: 3}
-  cost: 10
+  cost: 15
   speed: 5
   hitbox: 1
   lifeTime: 10

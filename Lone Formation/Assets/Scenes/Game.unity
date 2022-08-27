@@ -2169,11 +2169,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 375d8ca6136b649499ff9c9081b5bf37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 20
-  _health: 20
+  maxHealth: 100
+  _health: 100
   healthFunction: {fileID: 701089922}
   _movementSpeed: 10
-  cooldown: 1
+  cooldown: 0.5
 --- !u!61 &701089921
 BoxCollider2D:
   m_ObjectHideFlags: 0
