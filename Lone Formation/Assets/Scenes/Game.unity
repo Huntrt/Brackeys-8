@@ -723,7 +723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4066923a500705428e55c1166e14285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 10000
+  money: 50
   counter: {fileID: 38180015}
 --- !u!4 &231653264 stripped
 Transform:
@@ -4180,7 +4180,7 @@ MonoBehaviour:
   delay: 0.5
   enemyTable:
   - obj: {fileID: 0}
-    weight: 500
+    weight: 300
   - obj: {fileID: 3564844924565007491, guid: d261baf757edf1e45b3d8a1c8c3e1e7c, type: 3}
     weight: 100
   - obj: {fileID: 4164000536478309611, guid: 085fce68861d552479d3aa3929e4bc03, type: 3}
