@@ -7,12 +7,13 @@ public class Audios : MonoBehaviour
 
     [SerializeField] AudioClip alliesHurt, alliesDie;
     [SerializeField] AudioClip enemyHurt, enemyDie;
-	[SerializeField] AudioClip gameOver;
+	[SerializeField] AudioClip buy, gameOver;
 
 	public void alliesHurtPlay() => PlaySound(alliesHurt);
 	public void alliesDiePlay() => PlaySound(alliesDie);
 	public void enemyHurtPlay() => PlaySound(enemyHurt);
 	public void enemyDiePlay() => PlaySound(enemyDie);
+	public void buyPlay() => PlaySound(buy);
 	public void gameOverPlay() => PlaySound(gameOver);
 
 	void PlaySound(AudioClip sound) => GameManager.i.audioM.soundSource.PlayOneShot(sound);

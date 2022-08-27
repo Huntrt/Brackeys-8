@@ -23,6 +23,7 @@ public class GameOver : MonoBehaviour
 
 	void Over()
 	{
+		Audios.i.gameOverPlay();
 		survive.text = "Survive for <b>" + Time.time + "</b> second";
 		killed.text = "Killed <b>" + EnemiesManager.i.enemyKilled + "</b> enemy";
 		allies.text = "Reached an fleet with <b>" + peakAllies + "</b> ship";

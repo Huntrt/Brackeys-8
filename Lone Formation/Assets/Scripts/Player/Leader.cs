@@ -20,6 +20,16 @@ public class Leader : MonoBehaviour
 		DisplayHealth();
 	}
 
+	void Start()
+	{
+		stats.healthFunction.takeDamage += TakingDamage;
+	}
+
+	void TakingDamage()
+	{
+		Audios.i.alliesHurtPlay();
+	}
+
 	void DisplayHealth()
 	{
 		//Display the counter and bar
@@ -39,4 +49,8 @@ public class Leader : MonoBehaviour
 		formation.CreateGoal();
 	}
 
+	void OnDisable()
+	{
+		stats.healthFunction.takeDamage -= TakingDamage;
+	}
 }

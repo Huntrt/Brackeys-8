@@ -49,6 +49,7 @@ public class Wreck : MonoBehaviour
 				//Buying this wreck when press the key
 				if(Input.GetKey(KeyManager.i.Buy))
 				{
+					Audios.i.buyPlay();
 					Pool.i.Create(buyParticle, transform.position, Quaternion.identity);
 					Economic.i.Spended(cost, true);
 					Instantiate(ship, transform.position, Quaternion.identity);

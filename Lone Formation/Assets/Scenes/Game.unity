@@ -2297,11 +2297,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3693ea7b0c4f104593387fcf447cb3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  alliesHurt: {fileID: 0}
-  alliesDie: {fileID: 0}
-  enemyHurt: {fileID: 0}
-  enemyDie: {fileID: 0}
-  gameOver: {fileID: 0}
+  alliesHurt: {fileID: 8300000, guid: 461cd73b80808914a905734d241e5da6, type: 3}
+  alliesDie: {fileID: 8300000, guid: 3f63194ac4708aa4d84c067ac5ecefab, type: 3}
+  enemyHurt: {fileID: 8300000, guid: 96715870a28d32d4eb1d868a2feb984a, type: 3}
+  enemyDie: {fileID: 8300000, guid: b374d453df6a62041bd722a8b7868654, type: 3}
+  buy: {fileID: 8300000, guid: c43b453e56865e14896a9dbab0df8e9e, type: 3}
+  gameOver: {fileID: 8300000, guid: aeb20d4064aa7f54e91c565036501760, type: 3}
 --- !u!1 &723274271
 GameObject:
   m_ObjectHideFlags: 0
@@ -3623,8 +3624,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   masterVolume: 50
-  soundVolume: 70
-  musicVolume: 50
+  soundVolume: 20
+  musicVolume: 10
   soundSource: {fileID: 977413461}
   musicSource: {fileID: 977413460}
 --- !u!114 &977413463

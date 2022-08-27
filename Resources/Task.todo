@@ -59,10 +59,10 @@ Effects:
 	▪ Thrust @consider
 	▪ Muzzle @consider
 Audio:
-	▪ Take damage
-	▪ Killed
-	▪ Buying
-	▪ Game Over
+	✓ Take damage
+	✓ Killed
+	✓ Buying
+	✓ Game Over
 	▪ Music @consider
 Cast:
 	▪ Align Pattern: @consider
