@@ -35,6 +35,6 @@ public class AlliesSpawner : MonoBehaviour
 		Vector2 pos = new Vector2(map.scale.x, Random.Range(-map.scale.y, map.scale.y));
 		//Weight tochoose which wreck will be spawn
 		GameObject spawn = General.WeightingResult(wreckTable.weightList);
-		Instantiate(spawn, pos, Quaternion.identity);
+		if(spawn != null) Instantiate(spawn, pos, Quaternion.identity);
 	}
 }

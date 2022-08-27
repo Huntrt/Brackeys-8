@@ -1,29 +1,29 @@
 # Leader:
-	- HP = 20
+	- HP = 100
 	- SPD = 10
 	- Pattern:
 		+ None
 		- Cooldown = 0.5
 	- Attack:
 		+ Projectile
-		- Damage = 1
+		- Damage = 15
 		- Velocity = 12
-		- Range = 10
+		- Range = 40
 		
 # Fighter:
-	- HP = 10
+	- HP = 70
 	- SPD = 8
 	- Pattern:
 		+ None
 		- Cooldown = 0.7
 	- Attack:
 		+ Projectile
-		- Damage = 3
+		- Damage = 25
 		- Velocity = 14
 		- Range = 12
 
 # Jet:
-	- HP = 6
+	- HP = 40
 	- SPD = 13
 	- Pattern:
 		+ Align
@@ -32,26 +32,26 @@
 		- Cooldown = 0.4
 	- Attack:
 		+ Projectile
-		- Damage = 1
+		- Damage = 17
 		- Velocity = 8
 		- Range = 9
 
 # Broader:
-	- HP = 11
+	- HP = 35
 	- SPD = 7
 	- Pattern:
 		+ Cone
 		- Spread = 2
-		- Amount = 4
+		- Amount = 5
 		- Cooldown = 0.7
 	- Attack:
 		+ Projectile
-		- Damage = 2
+		- Damage = 15
 		- Velocity = 6
 		- Range = 16
 
 # Areas:
-	- HP = 13
+	- HP = 40
 	- SPD = 10
 	- Pattern:
 		+ Cone
@@ -60,7 +60,76 @@
 		- Cooldown = 1.2
 	- Attack:
 		+ Projectile
-		- Damage = 1
+		- Damage = 25
 		- Velocity = 10
 		- Range = 10
+
+# Repeater:
+	- HP = 35
+	- SPD = 7
+	- Pattern:
+		+ Accuracy
+		- Spread = 10
+		- Amount = 1
+		- Cooldown = 0.2
+	- Attack:
+		+ Projectile
+		- Damage = 3
+		- Velocity = 10
+		- Range = 7
+
+# Behinder:
+	- HP = 60
+	- SPD = 15
+	- Pattern:
+		+ Cone
+		- Spread = 5
+		- Amount = 3
+		- Cooldown = 0.3
+	- Attack:
+		+ Projectile
+		- Damage = 30
+		- Velocity = 12
+		- Range = 20
+
+# Dropper:
+	- HP = 40
+	- SPD = 5
+	- Pattern:
+		+ Cone
+		- Spread = 90
+		- Amount = 1
+		- Cooldown = 0
+	- Attack:
+		+ Projectile
+		- Damage = 10
+		- Velocity = 7
+		- Range = 20
+
+# Vire
+	- HP = 20
+	- SPD = 8
+	- Pattern:
+		+ Align
+		- Amount = 5
+		- Cooldown = 0.2
+	- Attack:
+		+ Projectile
+		- Damage = 5
+		- Velocity = 12
+		- Range = 25
+
+# Ace
+	- HP = 25
+	- SPD = 8
+	- Pattern:
+		+ Cone
+		- Spread = 10
+		- Amount = 10
+		- Cooldown = 0
+	- Attack:
+		+ Projectile
+		- Damage = 2
+		- Velocity = 12
+		- Range = 15
 
