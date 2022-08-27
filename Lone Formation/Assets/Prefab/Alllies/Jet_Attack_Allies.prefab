@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8816270632766166512
+--- !u!1 &1967178822955897126
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,56 +8,56 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 528201086215861779}
-  - component: {fileID: 6254048085647166309}
-  - component: {fileID: 1918819767449736832}
-  - component: {fileID: 153315199347384670}
-  - component: {fileID: 1861180729380211055}
+  - component: {fileID: 7368436338520388293}
+  - component: {fileID: 4026123786758606771}
+  - component: {fileID: 8913883359438934614}
+  - component: {fileID: 7148851452219073928}
+  - component: {fileID: 8701310561453591993}
   m_Layer: 8
-  m_Name: Fighter_Attack_Allies
+  m_Name: Jet_Attack_Allies
   m_TagString: AlliesAttack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &528201086215861779
+--- !u!4 &7368436338520388293
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8816270632766166512}
+  m_GameObject: {fileID: 1967178822955897126}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.84, y: 0, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.07, z: 1}
+  m_LocalScale: {x: 0.06, y: 0.06, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6254048085647166309
+--- !u!114 &4026123786758606771
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8816270632766166512}
+  m_GameObject: {fileID: 1967178822955897126}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c4573cedad0e5d148aa846488393b8a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 25
-  velocity: 14
-  range: 12
-  rb: {fileID: 1918819767449736832}
---- !u!50 &1918819767449736832
+  damage: 17
+  velocity: 10
+  range: 9
+  rb: {fileID: 8913883359438934614}
+--- !u!50 &8913883359438934614
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8816270632766166512}
+  m_GameObject: {fileID: 1967178822955897126}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -71,13 +71,13 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!61 &153315199347384670
+--- !u!61 &7148851452219073928
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8816270632766166512}
+  m_GameObject: {fileID: 1967178822955897126}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -97,13 +97,13 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!212 &1861180729380211055
+--- !u!212 &8701310561453591993
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8816270632766166512}
+  m_GameObject: {fileID: 1967178822955897126}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0

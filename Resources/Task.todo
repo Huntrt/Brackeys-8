@@ -72,26 +72,26 @@ Audio:
 	✓ Game Over
 	▪ Music @consider
 Cast:
-	▪ Align Pattern: @doing
+	X Align Pattern:
 		Shoot projectile forward that align vertically
-		▪ Support all amount
-		▪ Spacing Align
+		X Support all amount
+		X Spacing Align
 			Every position will space from each other using this value
-		▪ Squish Align
+		X Squish Align
 			All position will share this value to space accordingly
-		▪ Array of position to fire
+		X Array of position to fire
 	✓ Cone Pattern:
 		Shoot projectile forward in an cone pattern
 		✓ Support all amount
 		✓ Spreading between rotation
 		✓ Array of rotation to fire
-	▪ Accuracy Pattern: @next
+	✓ Accuracy Pattern:
 		Shoot 1 projectile an in random angle
-		▪ Support all degree
-		▪ Randomly choose an degree
-	▪ Customize Point: @consider
-		▪ Array of transform
-		▪ Use those transfrom to create attack
+		✓ Support all degree
+		✓ Randomly choose an degree
+	✓ Customize Point:
+		✓ Array of transform
+		✓ Use those transfrom to create attack
 Attacks:
 	✓ Projectile
 		✓ Move speed

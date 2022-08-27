@@ -6,7 +6,7 @@
 		- Cooldown = 0.5
 	- Attack:
 		+ Projectile
-		- Damage = 30
+		- Damage = 15
 		- Velocity = 25
 		- Range = 40
 		
@@ -21,7 +21,7 @@
 		- Damage = 25
 		- Velocity = 20
 		- Range = 12
-	- COST = 15
+	- COST = 20
 
 # Jet:
 	- HP = 40
@@ -43,7 +43,7 @@
 	- SPD = 7
 	- Pattern:
 		+ Cone
-		- Spread = 2
+		- Spread = 10
 		- Amount = 5
 		- Cooldown = 0.7
 	- Attack:
@@ -69,34 +69,33 @@
 	- COST = 20
 
 # Repeater:
-	- HP = 35
+	- HP = 25
 	- SPD = 7
 	- Pattern:
 		+ Accuracy
-		- Spread = 10
+		- Spread = 7
 		- Amount = 1
-		- Cooldown = 0.2
+		- Cooldown = 0.1
 	- Attack:
 		+ Projectile
 		- Damage = 3
 		- Velocity = 10
-		- Range = 7
-	- COST = 30
+		- Range = 12
+	- COST = 37
 
 # Behinder:
 	- HP = 60
 	- SPD = 15
 	- Pattern:
-		+ Cone
-		- Spread = 5
+		+ Point
 		- Amount = 3
-		- Cooldown = 0.3
+		- 3 Point in corner pattern that face behind
 	- Attack:
 		+ Projectile
 		- Damage = 30
 		- Velocity = 12
 		- Range = 20
-	- COST = 10
+	- COST = 12
 
 # Dropper:
 	- HP = 40
@@ -105,10 +104,10 @@
 		+ Cone
 		- Spread = 90
 		- Amount = 1
-		- Cooldown = 0
+		- Cooldown = 0.2
 	- Attack:
 		+ Projectile
-		- Damage = 10
+		- Damage = 22
 		- Velocity = 7
 		- Range = 20
 	- COST = 16
@@ -117,8 +116,8 @@
 	- HP = 20
 	- SPD = 8
 	- Pattern:
-		+ Align
-		- Amount = 5
+		+ Point
+		- 5 Point align in an V pattern
 		- Cooldown = 0.2
 	- Attack:
 		+ Projectile
@@ -134,7 +133,7 @@
 		+ Cone
 		- Spread = 10
 		- Amount = 10
-		- Cooldown = 0
+		- Cooldown = 0.2
 	- Attack:
 		+ Projectile
 		- Damage = 2

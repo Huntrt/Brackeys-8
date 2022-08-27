@@ -14,7 +14,7 @@
 		- Damage = 15
 		- Velocity = 8
 		- Range = 7
-	- BOUNTY = 10
+	- BOUNTY = 4
 
 # Quad
 	- HP = 20
@@ -25,13 +25,13 @@
 		+ Cone
 		- Spread = 360
 		- Amount = 4
-		- Cooldown = 1
+		- Cooldown = 1.4
 	- Attack:
 		+ Projectile
 		- Damage = 25
 		- Velocity = 5
-		- Range = 15
-	- BOUNTY = 30
+		- Range = 10
+	- BOUNTY = 10
 
 # Duals
 	- HP = 30
@@ -48,22 +48,22 @@
 		- Damage = 10
 		- Velocity = 7
 		- Range = 5
-	- BOUNTY = 20
+	- BOUNTY = 8
 
 # Spray
-	- HP = 20
+	- HP = 45
 	- Speed = 5
 	- Movement:
 		Enter then facing
 	- Pattern:
-		+ Align
+		+ Cone
 		- Wide = 3
-		- Amount = 3
-		- Cooldown = 0.5
+		- Amount = 5
+		- Cooldown = 0.7
 	- Attack:
 		+ Projectile
 		- Damage = 15
-		- Velocity = 3
+		- Velocity = 6
 		- Range = 8
-	- BOUNTY = 35
+	- BOUNTY = 15
 
