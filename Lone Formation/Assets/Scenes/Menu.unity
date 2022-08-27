@@ -3345,8 +3345,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 155, y: 25}
-  m_SizeDelta: {x: 300, y: 40}
+  m_AnchoredPosition: {x: 186, y: 25}
+  m_SizeDelta: {x: 360, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1958109949
 MonoBehaviour:
@@ -3368,12 +3368,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Art by Huntrt
+  m_text: 'Art and Code by Huntrt
 
-    Programming by Huntrt
+    UI using "Red Hat Mono" font made by <b>MCKL</b>
 
-    Game using "Red Hat Mono"
-    font made by <b>MCKL</b>'
+    An
+    game made by Huntrt for the Brackeys Game Jam 8 (2022.2)'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: da6a653fb2a0d5244b0231a970394a49, type: 2}
   m_sharedMaterial: {fileID: -3266916576462377905, guid: da6a653fb2a0d5244b0231a970394a49,
