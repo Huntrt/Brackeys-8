@@ -26,9 +26,9 @@ Ship:
 			✓ Displaying
 			✓ Fading
 	▪ Upgrade @consider
-	▪ Logging: @consider
-		▪ New ship join fleet
-		▪ Allies got killed
+	X Logging: @consider
+		X New ship join fleet
+		X Allies got killed
 Enemy:
 	✓ Spawning
 		✓ In any side of border
@@ -55,6 +55,7 @@ Effects:
 	✓ Buying
 	✓ Game Over
 	✓ Improve game background
+	▪ Attack Hit @consider
 	▪ Improve Main Menu Background @consider
 	▪ Thrust @consider
 	▪ Muzzle @consider

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class EnemyMeteorite : Enemy
 {
-	public int minHealth, damage;
+	public int minHealth, minSpeed, damage;
 
     public override void Start()
     {
@@ -11,10 +11,14 @@ public class EnemyMeteorite : Enemy
 		transform.localRotation = Quaternion.Euler(0,0, Random.Range(0,360));
 		//Get an random amount of heath from min to max to use it 
 		stats.maxHealth = Random.Range(minHealth, stats.maxHealth+1); stats.health = stats.maxHealth;
+		//Capping max heath could display in scale
+		float scaleCap = (float)stats.health/100; if(scaleCap >= 1.5) scaleCap = 1.5f;
 		//Set the size according to health has use
-		transform.localScale = new Vector2(stats.health/80,stats.health/80);
+		transform.localScale = new Vector2(scaleCap,scaleCap);
 		//Bounty equal to it heath
-		bounty = stats.health;
+		bounty = stats.health/4;
+		//Randomize speed
+		stats.movementSpeed = Random.Range(minSpeed, stats.movementSpeed);
     }
 
 	private void OnCollisionEnter2D(Collision2D other) 

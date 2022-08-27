@@ -3862,8 +3862,10 @@ MonoBehaviour:
   delay: 1
   spawnPerSecond: 0
   enemyTable:
+  - obj: {fileID: 3564844924565007491, guid: d261baf757edf1e45b3d8a1c8c3e1e7c, type: 3}
+    weight: 20
   - obj: {fileID: 4164000536478309611, guid: 085fce68861d552479d3aa3929e4bc03, type: 3}
-    weight: 0
+    weight: 5
 --- !u!114 &1090349360
 MonoBehaviour:
   m_ObjectHideFlags: 0

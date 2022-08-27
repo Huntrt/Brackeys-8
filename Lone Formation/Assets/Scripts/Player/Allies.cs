@@ -64,7 +64,7 @@ public class Allies : MonoBehaviour
 
 	void DisplayHealthInfo()
 	{
-		//Filling heath bar
+		//Filling health bar
 		healthBar.fillAmount = (float)stats.health / (float)stats.maxHealth;
 		//Begin fading after showing health bar
 		if(hBTimer > 0) hBTimer -= Time.deltaTime; else healthBar.transform.parent.gameObject.SetActive(false);

@@ -13,7 +13,7 @@ public class Enemy : MonoBehaviour
 		public float focusCenter;
 	}
 
-	void Start()
+	public virtual void Start()
 	{
 		stats.healthFunction.takeDamage += TakingDamage;
 		//Are killed when die via out of health
