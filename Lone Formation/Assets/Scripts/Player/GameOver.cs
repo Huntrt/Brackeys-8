@@ -29,7 +29,6 @@ public class GameOver : MonoBehaviour
 		allies.text = "Reached an fleet with <b>" + peakAllies + "</b> ship";
 		leader.gameObject.SetActive(false);
 		for (int g = 0; g < hideUIs.Length; g++) hideUIs[g].SetActive(false);
-		Time.timeScale = 0;
 		panel.SetActive(true);
 	}
 }

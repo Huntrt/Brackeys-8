@@ -8,6 +8,8 @@ public class Economic : MonoBehaviour
 	public int money;
 	public TextMeshProUGUI counter;
 
+	void Start() {Earn(0);}
+
 	//Return bool base on if there still money to spend
 	public bool Spended(int price, bool bought)
 	{

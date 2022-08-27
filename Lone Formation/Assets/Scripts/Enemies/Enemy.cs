@@ -5,6 +5,9 @@ public class Enemy : MonoBehaviour
 	public Stats stats;
 	public EnemyMovement movement;
 	public int bounty;
+	public float danger;
+	[Tooltip("How many percent of difficulty with increase with max hp")]
+	public float healthScaling;
 	public Spawning spawning; [System.Serializable] public class Spawning
 	{	
 		public Direction direction;
@@ -15,6 +18,9 @@ public class Enemy : MonoBehaviour
 
 	public virtual void Start()
 	{
+		//Scaling max heath (Heath got increade by X% of difficulty [Hp25 + (20% of dif12) = 27.4])
+		stats.maxHealth += (int)(EnemiesManager.i.difficulty * (healthScaling / 100f));
+		stats.health = stats.maxHealth;
 		stats.healthFunction.takeDamage += TakingDamage;
 		//Are killed when die via out of health
 		stats.healthFunction.onDie += Killed;

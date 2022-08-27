@@ -88,6 +88,8 @@ MonoBehaviour:
   stats: {fileID: 4164000536478309605}
   movement: {fileID: 4164000536478309607}
   bounty: 4
+  danger: 1
+  healthScaling: 50
   spawning:
     direction: 3
     focusCenter: 0

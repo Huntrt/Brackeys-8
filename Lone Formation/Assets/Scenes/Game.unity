@@ -698,9 +698,9 @@ MonoBehaviour:
     - obj: {fileID: 3794902853130747117, guid: 93d73b23545f5114686168f3ee85f392, type: 3}
       weight: 120
     - obj: {fileID: 7059842617692171911, guid: 3e54ef82d260eab4a88b5f77247dfbb0, type: 3}
-      weight: 100
+      weight: 80
     - obj: {fileID: 797308838774818593, guid: fb0fadef6e12c2e4295fd55c4fbfeca8, type: 3}
-      weight: 90
+      weight: 76
     - obj: {fileID: 1698489430194914116, guid: b8724302801955242b1f9d5c0db7a3ea, type: 3}
       weight: 65
     - obj: {fileID: 6617438211258957146, guid: 4ca3aefdb3876a94ba5d0f48866d7493, type: 3}
@@ -4177,9 +4177,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3bcfb04031d0934b9c8bc15e64b96dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 1
-  spawnPerSecond: 0
+  delay: 0.5
   enemyTable:
+  - obj: {fileID: 0}
+    weight: 500
   - obj: {fileID: 3564844924565007491, guid: d261baf757edf1e45b3d8a1c8c3e1e7c, type: 3}
     weight: 100
   - obj: {fileID: 4164000536478309611, guid: 085fce68861d552479d3aa3929e4bc03, type: 3}
@@ -23763,6 +23764,8 @@ MonoBehaviour:
   stats: {fileID: 7975239676526093860}
   movement: {fileID: 7975239676526093862}
   bounty: 20
+  danger: 0
+  healthScaling: 0
   spawning:
     direction: 3
     focusCenter: 50

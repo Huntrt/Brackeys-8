@@ -6,8 +6,8 @@ public class EnemiesSpawner : MonoBehaviour
 	EnemiesManager manager;
 	[Tooltip("This use to scale with difficulty\nThe lower it is the more enemy will spawn")]
 	public float delay;
-	[SerializeField] float spawnPerSecond; float spawnTimer;
-	[SerializeField] WeightData[] enemyTable;
+	float spawnTimer;
+	public WeightData[] enemyTable;
 
     void Start()
 	{
@@ -16,14 +16,14 @@ public class EnemiesSpawner : MonoBehaviour
 
 	void Update()
 	{
-		//Get enemy spawning frequent that scale with difficulty
-		spawnPerSecond = delay / manager.difficulty;
 		//An basic timer for spawning enemy
 		spawnTimer += Time.deltaTime;
-		if(spawnTimer >= spawnPerSecond)
+		if(spawnTimer >= delay)
 		{
-			//Spawn enemy in an postion after weighted them
-			SpawnEnemyInPosition(General.WeightingResult(enemyTable).GetComponent<Enemy>());
+			//Randomly weighted which enemy will spawn
+			GameObject choosed = General.WeightingResult(enemyTable);
+			//Spawn enemy in an postion if the choosed enemy exist
+			if(choosed != null)SpawnEnemyInPosition(choosed.GetComponent<Enemy>());
 			spawnTimer -= spawnTimer;
 		}
 	}
