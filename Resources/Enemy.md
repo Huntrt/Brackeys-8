@@ -4,8 +4,6 @@
 # Spitter:
 	- HP = 35
 	- SPD = 3
-	- Movement:
-		Enter then stay still
 	- Pattern:
 		+ None
 		- Cooldown = 1
@@ -19,8 +17,6 @@
 # Quad
 	- HP = 20
 	- SPD = 6
-	- Movement:
-		Enter then stay still
 	- Pattern:
 		+ Cone
 		- Spread = 360
@@ -31,13 +27,11 @@
 		- Damage = 25
 		- Velocity = 5
 		- Range = 15
-	- BOUNTY = 10
+	- BOUNTY = 7
 
 # Duals
 	- HP = 30
 	- Speed = 8
-	- Movement:
-		Enter then facing
 	- Pattern:
 		+ Align
 		- Wide = 1
@@ -53,11 +47,9 @@
 # Spray
 	- HP = 45
 	- Speed = 5
-	- Movement:
-		Enter then facing
 	- Pattern:
 		+ Cone
-		- Wide = 3
+		- Spread = 3
 		- Amount = 5
 		- Cooldown = 0.7
 	- Attack:
@@ -67,3 +59,47 @@
 		- Range = 7
 	- BOUNTY = 15
 
+# Wall
+	- HP = 80
+	- Speed = 1
+	- Pattern:
+		+ Cone
+		- Spread = 180
+		- Amount = 20
+		- Cooldown = 0.1
+	- Attack:
+		+ Projectile
+		- Damage = 10
+		- Velocity = 8
+		- Range = 15
+	- BOUNTY = 20
+
+# Unstable
+	- HP = 50
+	- Speed = 7
+	- Pattern:
+		+ Accuracy
+		- Spread = 360
+		- Amount = 6
+		- Cooldown = 1.4
+	- Attack:
+		+ Projectile
+		- Damage = 20
+		- Velocity = 4
+		- Range = 10
+	- BOUNTY = 25
+
+# Commander
+	- HP = 150
+	- Speed = 5
+	- Pattern:
+		+ Cone
+		- Spread = 180
+		- Amount = 8
+		- Cooldown = 1.6
+	- Attack:
+		+ Projectile
+		- Damage = 25
+		- Velocity = 6
+		- Range = 30
+	- BOUNTY = 45

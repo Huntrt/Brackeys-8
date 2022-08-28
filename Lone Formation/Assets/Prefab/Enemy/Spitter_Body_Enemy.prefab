@@ -54,7 +54,7 @@ MonoBehaviour:
   _health: 0
   healthFunction: {fileID: 725870177395529416}
   _movementSpeed: 3
-  cooldown: 1
+  cooldown: 2
 --- !u!114 &725870177395529416
 MonoBehaviour:
   m_ObjectHideFlags: 0
