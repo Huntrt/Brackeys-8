@@ -113,6 +113,8 @@ MonoBehaviour:
   - move: 3
     duration: 2
   - move: 9
+    duration: 1
+  - move: 0
     duration: 3
   - move: 4
     duration: 3
