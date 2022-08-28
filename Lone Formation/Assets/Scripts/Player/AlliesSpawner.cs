@@ -2,11 +2,13 @@ using UnityEngine;
 
 public class AlliesSpawner : MonoBehaviour
 {
+	//Set this class to singleton
+	public static AlliesSpawner i {get{if(_i==null){_i = GameObject.FindObjectOfType<AlliesSpawner>();}return _i;}} static AlliesSpawner _i;
     [SerializeField] GameObject[] alliesToUse;
-    [SerializeField] Table wreckTable;
+    public Table wreckTable;
 	Map map;
 
-	[System.Serializable] class Table
+	[System.Serializable] public class Table
 	{
 		public float delay, perSecond;
 		[HideInInspector] public float timer;

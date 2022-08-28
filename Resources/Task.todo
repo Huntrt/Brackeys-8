@@ -63,8 +63,7 @@ Difficulty:
 	✓ Increasing difficulty
 	✓ Enemy spawning rate
 	✓ Enemy heath scale
-	X Allies spawn rate @consider
-		Remove empty allies as difficulty increase
+	✓ Allies spawn rate
 Audio:
 	✓ Take damage
 	✓ Killed
