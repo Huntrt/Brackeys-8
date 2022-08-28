@@ -56,7 +56,7 @@ Effects:
 	✓ Game Over
 	✓ Improve game background
 	✓ Attack Hit
-	▪ Improve Main Menu Background @doing
+	✓ Improve Main Menu Background
 	X Thrust @consider
 	X Muzzle @consider
 Difficulty:
@@ -70,7 +70,7 @@ Audio:
 	✓ Killed
 	✓ Buying
 	✓ Game Over
-	▪ Music @consider
+	✓ Music 
 Cast:
 	X Align Pattern:
 		Shoot projectile forward that align vertically
@@ -99,6 +99,3 @@ Attacks:
 		✓ Contact with enemy
 		✓ Dealt damage
 		✓ Destroy
-
-
-		
