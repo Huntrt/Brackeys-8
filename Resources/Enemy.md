@@ -59,21 +59,6 @@
 		- Range = 7
 	- BOUNTY = 15
 
-# Wall
-	- HP = 80
-	- Speed = 1
-	- Pattern:
-		+ Cone
-		- Spread = 180
-		- Amount = 20
-		- Cooldown = 0.1
-	- Attack:
-		+ Projectile
-		- Damage = 10
-		- Velocity = 8
-		- Range = 15
-	- BOUNTY = 20
-
 # Unstable
 	- HP = 50
 	- Speed = 7
@@ -90,16 +75,16 @@
 	- BOUNTY = 25
 
 # Commander
-	- HP = 150
+	- HP = 200
 	- Speed = 5
 	- Pattern:
 		+ Cone
 		- Spread = 180
 		- Amount = 8
-		- Cooldown = 1.6
+		- Cooldown = 1.8
 	- Attack:
 		+ Projectile
-		- Damage = 25
+		- Damage = 17
 		- Velocity = 6
 		- Range = 30
-	- BOUNTY = 45
+	- BOUNTY = 100

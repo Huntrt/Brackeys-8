@@ -88,11 +88,11 @@ MonoBehaviour:
   stats: {fileID: 6801218328368989685}
   movement: {fileID: 1677898234412389184}
   bounty: 15
-  danger: 5
+  danger: 12
   healthScaling: 30
   spawning:
     direction: 3
-    focusCenter: 50
+    focusCenter: 20
 --- !u!114 &1677898234412389184
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -4200,17 +4200,21 @@ MonoBehaviour:
   delay: 0.5
   enemyTable:
   - obj: {fileID: 0}
-    weight: 300
+    weight: 400
   - obj: {fileID: 3564844924565007491, guid: d261baf757edf1e45b3d8a1c8c3e1e7c, type: 3}
-    weight: 100
+    weight: 150
   - obj: {fileID: 4164000536478309611, guid: 085fce68861d552479d3aa3929e4bc03, type: 3}
-    weight: 50
+    weight: 100
   - obj: {fileID: 8004267811993475418, guid: f3448b5e1098a544ebd257a1b3b288a9, type: 3}
-    weight: 30
+    weight: 80
   - obj: {fileID: 1634060859821721726, guid: 1d3fe7847427ea44fa321bae73cda7f7, type: 3}
-    weight: 25
+    weight: 70
+  - obj: {fileID: 6838885468187848891, guid: d090f2c6dfb16b2478d6f0dc16cf00db, type: 3}
+    weight: 50
   - obj: {fileID: 4417825265119128515, guid: e8ac160491ad4e44b846959ac0f54d24, type: 3}
     weight: 10
+  - obj: {fileID: 4075515987415273090, guid: 084cb6477806dd64db6065a0627ebf38, type: 3}
+    weight: 1000
 --- !u!114 &1090349360
 MonoBehaviour:
   m_ObjectHideFlags: 0
