@@ -8,14 +8,20 @@ public class EnemiesSpawner : MonoBehaviour
 	public float delay;
 	float spawnTimer;
 	public WeightData[] enemyTable;
+	[SerializeField] float spawnWaiting; bool beginSpawn = false;
 
     void Start()
 	{
 		manager = EnemiesManager.i;
+		Invoke("BeginSpawn", spawnWaiting);
 	}
+
+	void BeginSpawn() => beginSpawn = true;
 
 	void Update()
 	{
+		//Wait before spawning
+		if(!beginSpawn) return;
 		//An basic timer for spawning enemy
 		spawnTimer += Time.deltaTime;
 		if(spawnTimer >= delay)

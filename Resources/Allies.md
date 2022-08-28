@@ -49,7 +49,7 @@
 	- Attack:
 		+ Projectile
 		- Damage = 15
-		- Velocity = 6
+		- Velocity = 8
 		- Range = 16
 	- COST = 30
 
@@ -70,7 +70,7 @@
 
 # Repeater:
 	- HP = 25
-	- SPD = 7
+	- SPD = 4
 	- Pattern:
 		+ Accuracy
 		- Spread = 7
@@ -78,9 +78,9 @@
 		- Cooldown = 0.1
 	- Attack:
 		+ Projectile
-		- Damage = 3
+		- Damage = 1
 		- Velocity = 10
-		- Range = 12
+		- Range = 10
 	- COST = 37
 
 # Behinder:

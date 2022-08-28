@@ -69,7 +69,7 @@ MonoBehaviour:
   maxHealth: 25
   _health: 0
   healthFunction: {fileID: 2397259998511351365}
-  _movementSpeed: 7
+  _movementSpeed: 4
   cooldown: 0
 --- !u!114 &2397259998511351365
 MonoBehaviour:

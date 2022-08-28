@@ -29,7 +29,6 @@ public class AttackProjectile : Attack
 	void OnCollisionEnter2D(Collision2D other) 
 	{
 		other.gameObject.GetComponent<Health>().TakeDamage(damage);
-		//test: send collision position
 		Attacked(other.gameObject, other.contacts[0].point);
 		AttackOver();
 	}

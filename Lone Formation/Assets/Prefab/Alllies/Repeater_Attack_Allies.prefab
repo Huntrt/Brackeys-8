@@ -46,11 +46,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4573cedad0e5d148aa846488393b8a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 3
+  damage: 1
   attackParticle: {fileID: 4582195286599839068, guid: b3020f050d4e492439cc6e16025ddbfe,
     type: 3}
   velocity: 10
-  range: 12
+  range: 10
   rb: {fileID: 2233885642177463032}
 --- !u!50 &2233885642177463032
 Rigidbody2D:

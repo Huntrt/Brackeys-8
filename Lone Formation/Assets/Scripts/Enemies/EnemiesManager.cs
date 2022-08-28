@@ -23,7 +23,7 @@ public class EnemiesManager : MonoBehaviour
 		difficulty += enemy.danger;
 		//note: Decrease the weight of an null slot of enemy make more enemy spawn and also
 		//it also help increase more weight allowed when go negative for more powerful enemy spawn
-		spawner.enemyTable[0].weight -= enemy.danger;
+		spawner.enemyTable[0].weight -= enemy.danger*15;
 		DespawnEnemy(enemy);
 	}
 
