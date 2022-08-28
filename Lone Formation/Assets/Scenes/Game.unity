@@ -728,7 +728,7 @@ MonoBehaviour:
     timer: 0
     weightList:
     - obj: {fileID: 0}
-      weight: 1000
+      weight: 1500
     - obj: {fileID: 7193636795754073207, guid: 99efd2ecf3dd81645b387c573671dcb5, type: 3}
       weight: 130
     - obj: {fileID: 3794902853130747117, guid: 93d73b23545f5114686168f3ee85f392, type: 3}
@@ -759,7 +759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4066923a500705428e55c1166e14285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 50
+  money: 0
   counter: {fileID: 38180015}
 --- !u!4 &231653264 stripped
 Transform:
